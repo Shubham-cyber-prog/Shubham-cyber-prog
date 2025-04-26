@@ -37,6 +37,8 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shubham-cyber-prog&show_icons=true&locale=en" alt="shubham-cyber-prog" /></p>
 
+
+![snake gif](https://github.com/Shubham-cyber-prog/Shubham-cyber-prog/blob/output/github-contribution-grid-snake.gif)
 <!--
 **Shubham-cyber-prog/Shubham-cyber-prog** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -51,3 +53,5 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+![snake gif](https://github.com/Shubham-cyber-prog/Shubham-cyber-prog/edit/main/README.md/Shubham-cyber-prog/blob/output/github-contribution-grid-snake.gif)
