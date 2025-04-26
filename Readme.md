@@ -1,4 +1,12 @@
 ![logo](https://github.com/Shubham-cyber-prog/Shubham-cyber-prog/blob/main/Claudia%20Alves.png?raw=true)
+
+<h1 align="center"><code>Welcome To My GitHub page </code></h1>
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=221DF7&width=435&lines=Hello+%F0%9F%91%8B;I'm+Subham+Nayak....;Turning+ideas+into+reality;Checkout+my+Projects;and+explore+my+Repo" alt="Typing SVG" />
+</a>
+
+
 <h1 align="center">Hi 👋, I'm Subham Nayak</h1>
 <h3 align="center">🔹 Clean & Professional: B.Tech CSE Student | Frontend Developer | Exploring Full-Stack Development 🔹 Creative & Confident: Turning Designs into Interactive Web Experiences | Frontend Developer in Progress 🔹 Minimal & Technical: Frontend Developer | HTML • CSS • JavaScript | Open to Learn & Build 🔹 Resume-Style: Computer Science Undergraduate | Passionate About Web Development & Problem Solving</h3>
 <img align="right" alt="coding" width="400" src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif">
@@ -46,7 +54,7 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shubham-cyber-prog&show_icons=true&locale=en" alt="shubham-cyber-prog" /></p>
 
-
+[![Subham's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Shubham-cyber-prog&bg_color=000000,0f2027,203a43,2c5364&color=ffffff&line=00c3ff&point=ffffff&area=true&area_color=00c3ff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 <!-- Snake Game Repo View -->
 <div align="center">
