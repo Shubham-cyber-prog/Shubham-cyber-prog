@@ -1,12 +1,12 @@
-![logo](https://github.com/Shubham-cyber-prog/Shubham-cyber-prog/blob/main/Claudia%20Alves.png?raw=true)
+<!-- Shiny Capsule Header -->
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=270&section=header&text=Subham%20Nayak&fontSize=70&fontAlignY=35&desc=Frontend%20Developer%20%7C%20CS%20Student&descAlignY=60&descSize=20&animation=fadeIn&fontColor=ffffff)
 
-<h1 align="center"><code>Welcome To My GitHub page </code></h1>
+<!-- Centered Typing Text -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=F7C52B&center=true&vCenter=true&width=435&lines=Welcome+to+my+GitHub+Profile!" alt="Typing SVG" />
+</p>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=221DF7&width=435&lines=Hello+%F0%9F%91%8B;I'm+Subham+Nayak....;Turning+ideas+into+reality;Checkout+my+Projects;and+explore+my+Repo" alt="Typing SVG" />
-</a>
 
-<h3 align="center">🔹 Clean & Professional: B.Tech CSE Student | Frontend Developer | Exploring Full-Stack Development 🔹 Creative & Confident: Turning Designs into Interactive Web Experiences | Frontend Developer in Progress 🔹 Minimal & Technical: Frontend Developer | HTML • CSS • JavaScript | Open to Learn & Build 🔹 Resume-Style: Computer Science Undergraduate | Passionate About Web Development & Problem Solving</h3>
 <img align="right" alt="coding" width="400" src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=shubham-cyber-prog&label=Profile%20views&color=0e75b6&style=flat" alt="shubham-cyber-prog" /> </p>
