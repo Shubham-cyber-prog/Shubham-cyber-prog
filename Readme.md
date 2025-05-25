@@ -73,3 +73,7 @@ For future use
   <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
 </div>
 
+### 📊 Contribution Breakdown (Radar Chart)
+
+![Metrics](https://metrics.lecoq.io/Shubham-cyber-prog?template=classic&base=activity&config.timezone=Asia%2FCalcutta)
+
