@@ -67,7 +67,8 @@ For future use
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 [![Subham's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Shubham-cyber-prog&bg_color=000000,0f2027,203a43,2c5364&color=ffffff&line=00c3ff&point=ffffff&area=true&area_color=00c3ff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
+![3D GitHub Profile](https://github.com/Shubham-cyber-prog/github-profile-3d-contrib/blob/main/profile-3d-contrib/profile-night-rainbow.svg)
+ 
 <!-- Snake Game Repo View -->
 <div align="center">
   <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
