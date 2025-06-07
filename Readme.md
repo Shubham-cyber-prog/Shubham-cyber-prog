@@ -106,12 +106,10 @@ For future use
   <img align="left" alt="Leetcode" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/leetcode.svg" />
 </a>
 -->
-<h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/ "> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt=" " /></a></p><br><br>
 
-
-[![Subham's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Shubham-cyber-prog&bg_color=000000,0f2027,203a43,2c5364&color=ffffff&line=00c3ff&point=ffffff&area=true&area_color=00c3ff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-<h4 align="center">
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shubham-cyber-prog&theme=react-dark&hide_border=true&area=true" />
+</p>
 
 ```diff
 +@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @+
