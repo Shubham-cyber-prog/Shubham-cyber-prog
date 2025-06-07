@@ -110,13 +110,31 @@ For future use
 <p><a href="https://www.buymeacoffee.com/ "> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt=" " /></a></p><br><br>
 
 
-### ✍ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
 [![Subham's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Shubham-cyber-prog&bg_color=000000,0f2027,203a43,2c5364&color=ffffff&line=00c3ff&point=ffffff&area=true&area_color=00c3ff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<h4 align="center">
 
-
-
+```diff
++@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @+
+@@       o o                                           @@
+@@       | |                                           @@
+@@      _L_L_                                          @@
+@@   ❮\/__-__\/❯ Programming isn't about what you know @@
+@@   ❮(|~o.o~|)❯  It's about what you can figure out   @@
+@@   ❮/ \`-'/ \❯                                       @@
+@@     _/`U'\_                                         @@
+@@    ( .   . )     .----------------------------.     @@
+@@   / /     \ \    | while( ! (succeed=try() ) ) |     @@
+@@   \ |  ,  | /    '----------------------------'     @@
+@@    \|=====|/                                        @@
+@@     |_.^._|                                         @@
+@@     | |"| |                                         @@
+@@     ( ) ( )   Testing leads to failure              @@
+@@     |_| |_|   and failure leads to understanding    @@
+@@ _.-' _j L_ '-._                                     @@
+@@(___.'     '.___)                                    @@
++@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @+
+```
+</h4>  
 
  
 <!-- Snake Game Repo View -->
