@@ -111,6 +111,9 @@ For future use
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shubham-cyber-prog&theme=react-dark&hide_border=true&area=true" />
 </p>
 
+
+<h4 align="center">
+  
 ```diff
 +@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @+
 @@       o o                                           @@
@@ -132,8 +135,8 @@ For future use
 @@(___.'     '.___)                                    @@
 +@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @+
 ```
-</h4>  
 
+</h4>  
  
 <!-- Snake Game Repo View -->
 <div align="center">
