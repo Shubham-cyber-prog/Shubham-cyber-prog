@@ -1,6 +1,6 @@
 ![header](https://user-images.githubusercontent.com/73928744/182041587-527d010a-80d3-4b57-bd99-c2be13c1a516.png)
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=270&section=header&text=Subham%20Nayak&fontSize=70&fontAlignY=35&desc=Frontend%20Developer%20%7C%20CS%20Student&descAlignY=60&descSize=20&animation=fadeIn&fontColor=ffffff)
-
+ 
 <!-- Centered Typing Text -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=F7C52B&center=true&vCenter=true&width=435&lines=Welcome+to+my+GitHub+Profile!" alt="Typing SVG" />
@@ -83,19 +83,27 @@
 </p>
 
 
-### My Github Stats 📊
 
-![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubham-cyber-prog&theme=2077)
-![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Shubham-cyber-prog&theme=2077)
-![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shubham-cyber-prog&theme=2077)
-![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=2077)
-![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shubham-cyber-prog&theme=2077&utcOffset=8)
-[![](https://raw.githubusercontent.com/Shubham-cyber-prog/Shubham-cyber-prog/master/profile-summary-card-output/github_dark/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-[![](https://raw.githubusercontent.com/Shubham-cyber-prog/Shubham-cyber-prog/master/profile-summary-card-output/github_dark/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards) 
-[![](https://raw.githubusercontent.com/Shubham-cyber-prog/Shubham-cyber-prog/master/profile-summary-card-output/github_dark/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-[![](https://raw.githubusercontent.com/Shubham-cyber-prog/Shubham-cyber-prog/master/profile-summary-card-output/github_dark/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards) 
-[![](https://raw.githubusercontent.com/Shubham-cyber-prog/Shubham-cyber-prog/master/profile-summary-card-output/github_dark/4-productive-time.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-[![GitHub Streak](https://streak-stats.demolab.com/?user=Shubham-cyber-prog&theme=ads-juicy-fresh)](https://git.io/streak-stats)
+
+<h2 align="center">📊 GitHub Summary</h2>
+
+<p align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubham-cyber-prog&theme=2077" alt="Profile Details" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Shubham-cyber-prog&theme=2077" alt="Repos Per Language" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shubham-cyber-prog&theme=2077" alt="Most Commit Language" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=2077" alt="GitHub Stats" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shubham-cyber-prog&theme=2077&utcOffset=8" alt="Productive Time" />
+</p>
+
+<h2 align="center">🔥 GitHub Contribution Streak</h2>
+
+<p align="center">
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com/?user=Shubham-cyber-prog&theme=ads-juicy-fresh" alt="GitHub Streak" />
+  </a>
+</p>
+
+
 
 <!--
 For future use
