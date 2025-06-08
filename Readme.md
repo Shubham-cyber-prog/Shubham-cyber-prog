@@ -23,10 +23,7 @@
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
 
-<h2 align="center">✨🪽🔥 GitHub Contribution Streak 🪽✨</h2>
 
-
- ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Shubham-cyber-prog&theme=highcontrast)
 
 <p align="center">
   <img height="150" width="150" src="left.webp" />
