@@ -25,9 +25,14 @@
 
 <h2 align="center">✨🪽🔥 GitHub Contribution Streak 🪽✨</h2>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Shubham-cyber-prog&theme=ads-juicy-fresh&fire=orange&hide_border=true" alt="GitHub Streak" />
-</p>
+
+ ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Shubham-cyber-prog&theme=highcontrast)
+
+
+
+
+
+
 
 <h3 align="center">Connect with Me</h3>
 <p align="center">
