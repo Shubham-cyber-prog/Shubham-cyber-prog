@@ -23,6 +23,12 @@
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
 
+<h2 align="center">✨🪽🔥 GitHub Contribution Streak 🪽✨</h2>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=Shubham-cyber-prog&theme=ads-juicy-fresh&fire=orange&hide_border=true" alt="GitHub Streak" />
+</p>
+
 <h3 align="center">Connect with Me</h3>
 <p align="center">
   <a href="https://linkedin.com/in/subham-nayak-00276930b" target="_blank">
@@ -98,19 +104,6 @@
 
 
 
-<h2 align="center">🔥 GitHub Contribution Streak</h2>
-
-<p align="center">
-  <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com/?user=Shubham-cyber-prog&theme=ads-juicy-fresh" alt="GitHub Streak" />
-  </a>
-</p>
-
-<h2 align="center">✨🪽🔥 GitHub Contribution Streak 🪽✨</h2>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Shubham-cyber-prog&theme=ads-juicy-fresh&fire=orange&hide_border=true" alt="GitHub Streak" />
-</p>
 
 <!--
 For future use
