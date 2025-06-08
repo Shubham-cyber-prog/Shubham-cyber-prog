@@ -47,6 +47,7 @@
 
 
 
+
 <h3 align="center">🛠️ Languages & Tools</h3>
 
 <p align="center">
@@ -103,7 +104,11 @@
   </a>
 </p>
 
+<h2 align="center">✨🪽🔥 GitHub Contribution Streak 🪽✨</h2>
 
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=Shubham-cyber-prog&theme=ads-juicy-fresh&fire=orange&hide_border=true" alt="GitHub Streak" />
+</p>
 
 <!--
 For future use
