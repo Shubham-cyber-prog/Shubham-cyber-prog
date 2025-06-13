@@ -110,10 +110,10 @@
 
 <p align="center">
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubham-cyber-prog&theme=2077" alt="Profile Details" />
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Shubham-cyber-prog&theme=2077" alt="Repos Per Language" />
+   <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=2077" alt="GitHub Stats" />
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shubham-cyber-prog&theme=2077" alt="Most Commit Language" />
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=2077" alt="GitHub Stats" />
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shubham-cyber-prog&theme=2077&utcOffset=8" alt="Productive Time" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shubham-cyber-prog&theme=2077&utcOffset=8" 
+    alt="Productive Time"   width="847"   height="262"/>
 </p>
 
 
