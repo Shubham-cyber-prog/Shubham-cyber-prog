@@ -32,13 +32,13 @@
 
 
 <p align="center">
-  <img height="150" width="150" src="left.webp" />
+  <img height="170" width="160" src="left.webp" />
   <img 
     align="center" 
     src="https://github-readme-streak-stats.herokuapp.com/?user=Shubham-cyber-prog&theme=highcontrast&hide_border=true&stroke=FFD700&fire=FFD700&currStreakNum=FFD700&sideNums=FFD700&currStreakLabel=FFD700" 
     style="filter: drop-shadow(0 0 3px #FFD700);"
   />
-  <img height="150" width="150" src="right.webp" />
+  <img height="170" width="160" src="right.webp" />
 </p>
 
 
