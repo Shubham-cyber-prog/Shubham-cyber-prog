@@ -6,7 +6,7 @@ on:
 
 jobs:
   github-metrics:
-    runs-on: ubuntu-latest
+    runs-on: window-11-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
