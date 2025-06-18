@@ -1,15 +1,25 @@
-   jobs:
+name: Metrics
+on:
+  schedule: [{cron: "0 * * * *"}]  # every hour, change as needed
+  workflow_dispatch:
+
+jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y docker.io jq
-      - uses: lowlighter/metrics@latest
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
         with:
+          filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          user: Shubham-cyber-prog
+
+          # Basic settings
+          user: tumhara-username
           template: classic
           base: header, activity, community, repositories, metadata
-          config_timezone: Asia/Kolkata
+
+          # Optional: add plugins
+          plugin_languages: yes
+          plugin_followup: yes
+          plugin_habits: yes
+          plugin_lines: yes
