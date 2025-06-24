@@ -1,6 +1,10 @@
+
+
 name: Metrics
+
 on:
-  schedule: [{cron: "0 * * * *"}]  # every hour, change as needed
+  schedule:
+    - cron: "0 * * * *"  # Runs every hour
   workflow_dispatch:
 
 jobs:
