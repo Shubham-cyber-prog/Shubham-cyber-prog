@@ -22,7 +22,7 @@
 
 - 🔭 I’m currently working on [Portfolio](https://shubham-cyber-prog.github.io/portfolio/)
 
-- 🌱 I’m currently learning **React.js**, **GSAP**, and **Tailwind CSS**
+- 🌱 I’m currently learning **Express.js**, **React.js**, and **Node.js**
 
 - 👨‍💻 All of my projects are available at [GitHub](https://github.com/Shubham-cyber-prog)
 
