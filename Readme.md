@@ -167,6 +167,7 @@ For future use
 
 
 <figure><embed src="https://wakatime.com/share/@SubhamN2006/56e22f87-4788-409d-9c46-ece89baf70fc.svg"></embed></figure>
+<a href="https://wakatime.com"><img src="https://wakatime.com/share/@SubhamN2006/d9679bf9-fd23-48e6-b7b2-f27f159adc7d.png" /></a>
 
 
 <!-- Cyan Wave Footer - shorter height -->
