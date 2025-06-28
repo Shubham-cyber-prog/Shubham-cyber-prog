@@ -165,15 +165,32 @@ For future use
   <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
 </div>
 
+<!--START_SECTION:waka-->
 
+---
 
-## ⏱ Weekly WakaTime Coding Stats
-
-<a href="https://wakatime.com"><img src="https://wakatime.com/share/@SubhamN2006/d9679bf9-fd23-48e6-b7b2-f27f159adc7d.png" /></a>
-
+## 📊 WakaTime Stats (Project Badge + Graphs)
 
 
 <!--START_SECTION:waka-->
+![Code Time](https://wakatime.com/badge/user/04ae4d42-f7cb-4e4a-9801-1cd54e703de6.svg)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I've%20Written-50k%2B%20lines%20of%20code-blue?style=for-the-badge)
+
+
+**🐱 My GitHub Data** 
+
+> 📦 14.2 MB used in GitHub's storage
+  > 
+> 🏆 247 contributions in the last year
+  > 
+> 💼 Currently a student, open to opportunities
+  >  
+> 📜 11 public repositories
+  >  
+> 🔑 1 private repository
+  > 
+**I'm a Night 🦉** 
 
 ```txt
 JavaScript   12 hrs 26 mins  ██████████████▓░░░░░░░░░░   58.24 %
@@ -183,9 +200,15 @@ CSS          19 mins         ▒░░░░░░░░░░░░░░░░
 JSON         18 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.47 %
 ```
 
+
+ Last Updated on 28/06/2025 21:12:44 UTC
 <!--END_SECTION:waka-->
 
+<p align="center">
+ <a href="https://wakatime.com"><img src="https://wakatime.com/share/@SubhamN2006/a225e68e-c241-4c23-8de3-bb41644e569e.png" /></a>
+</p>
 
+<!--END_SECTION:waka-->
 
 <!-- Cyan Wave Footer - shorter height -->
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=130&section=footer&animation=fadeIn)
