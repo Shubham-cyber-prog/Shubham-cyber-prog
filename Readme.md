@@ -166,7 +166,7 @@ For future use
 </div>
 
 
-
+<figure><embed src="https://wakatime.com/share/@SubhamN2006/56e22f87-4788-409d-9c46-ece89baf70fc.svg"></embed></figure>
 
 
 <!-- Cyan Wave Footer - shorter height -->
