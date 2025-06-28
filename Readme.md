@@ -174,6 +174,15 @@ For future use
 
 
 <!--START_SECTION:waka-->
+
+```txt
+JavaScript   12 hrs 26 mins  ██████████████▓░░░░░░░░░░   58.24 %
+HTML         4 hrs 44 mins   █████▓░░░░░░░░░░░░░░░░░░░   22.18 %
+Markdown     3 hrs 6 mins    ███▓░░░░░░░░░░░░░░░░░░░░░   14.54 %
+CSS          19 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.49 %
+JSON         18 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.47 %
+```
+
 <!--END_SECTION:waka-->
 
 
