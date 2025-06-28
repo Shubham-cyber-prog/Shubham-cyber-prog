@@ -166,8 +166,12 @@ For future use
 </div>
 
 
-<figure><embed src="https://wakatime.com/share/@SubhamN2006/56e22f87-4788-409d-9c46-ece89baf70fc.svg"></embed></figure>
+<a href="https://wakatime.com/badge/user/04ae4d42-f7cb-4e4a-9801-1cd54e703de6/project/eb57f9fc-a1f9-4770-b838-11e7b98eacff"><img src="https://wakatime.com/badge/user/04ae4d42-f7cb-4e4a-9801-1cd54e703de6/project/eb57f9fc-a1f9-4770-b838-11e7b98eacff.svg" alt="wakatime"></a>
+
+
+
 <a href="https://wakatime.com"><img src="https://wakatime.com/share/@SubhamN2006/d9679bf9-fd23-48e6-b7b2-f27f159adc7d.png" /></a>
+
 
 
 <!-- Cyan Wave Footer - shorter height -->
