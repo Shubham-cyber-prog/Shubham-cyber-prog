@@ -14,14 +14,14 @@ jobs:
 
       - uses: yoshi389111/github-profile-3d-contrib@0.4.0
         env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}  # 🔐 Use your custom PAT
           USERNAME: ${{ github.repository_owner }}
           MAX_REPOS: 250
 
       - name: Commit & Push
         run: |
           git config --global user.name "${{ github.repository_owner }}"
-          git config --global user.email "sn343555@gmail.com"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
           git add -A .
           git commit -m "🎯 Updated GitHub 3D Profile"
           git push
