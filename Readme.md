@@ -169,46 +169,13 @@ For future use
 
 <!--START_SECTION:waka-->
 
----
-
-## 📊 WakaTime Stats (Project Badge + Graphs)
-
-
-<!--START_SECTION:waka-->
-![Code Time](https://wakatime.com/badge/user/04ae4d42-f7cb-4e4a-9801-1cd54e703de6.svg)
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I've%20Written-50k%2B%20lines%20of%20code-blue?style=for-the-badge)
-
-
-**🐱 My GitHub Data** 
-
-> 📦 14.2 MB used in GitHub's storage
-  > 
-> 🏆 247 contributions in the last year
-  > 
-> 💼 Currently a student, open to opportunities
-  >  
-> 📜 11 public repositories
-  >  
-> 🔑 1 private repository
-  > 
-**I'm a Night 🦉** 
-
 ```txt
-JavaScript   12 hrs 26 mins  ██████████████▓░░░░░░░░░░   58.24 %
-HTML         4 hrs 44 mins   █████▓░░░░░░░░░░░░░░░░░░░   22.18 %
-Markdown     3 hrs 6 mins    ███▓░░░░░░░░░░░░░░░░░░░░░   14.54 %
-CSS          19 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.49 %
-JSON         18 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.47 %
+JavaScript   15 hrs 47 mins  ███████████████▓░░░░░░░░░   62.02 %
+HTML         4 hrs 53 mins   ████▓░░░░░░░░░░░░░░░░░░░░   19.22 %
+Markdown     3 hrs 19 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   13.06 %
+Bash         29 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.94 %
+CSS          21 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.41 %
 ```
-
-
- Last Updated on 28/06/2025 21:12:44 UTC
-<!--END_SECTION:waka-->
-
-<p align="center">
- <a href="https://wakatime.com"><img src="https://wakatime.com/share/@SubhamN2006/a225e68e-c241-4c23-8de3-bb41644e569e.png" /></a>
-</p>
 
 <!--END_SECTION:waka-->
 
