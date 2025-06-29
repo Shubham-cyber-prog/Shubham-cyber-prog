@@ -1,0 +1,15 @@
+name: Metrics
+on:
+  schedule: [{ cron: "0 0 * * *" }]
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # REQUIRED: Replace this with your GitHub username
+          user: SubhamN2006
+          template: classic
+          base: header, activity, community, repositories, metadata
