@@ -217,6 +217,14 @@ Bash         29 mins         ▓░░░░░░░░░░░░░░░░
 ![WakaTime Stats](https://wakatime.com/share/@SubhamN2006/65505277-ad67-4bc0-8039-e93c362e55f8.svg)
 
 
+<p align="center">
+  <img height="50" width="50" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"/>  
+  <h4 align="center"><code>📊 𝙶𝚒𝚝𝙷𝚞𝚋 𝙼𝚎𝚝𝚛𝚒𝚌𝚜</code></h4>
+</p>
+
+
+
+
 
 <!-- Cyan Wave Footer - shorter height -->
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=130&section=footer&animation=fadeIn)
