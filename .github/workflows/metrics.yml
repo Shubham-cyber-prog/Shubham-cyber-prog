@@ -1,15 +1,20 @@
-name: Metrics
+name: 🧮 Generate GitHub Metrics
+
 on:
-  schedule: [{ cron: "0 0 * * *" }]
+  schedule: [{ cron: "0 0 * * *" }] # every day at midnight
+  push: { branches: ["main"] }
   workflow_dispatch:
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: 🧩 Metrics
+        uses: lowlighter/metrics@latest
         with:
+          filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          user: SubhamN2006
+          user: Shubham-cyber-prog
           template: classic
           base: header, activity, community, repositories, metadata
