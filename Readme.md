@@ -209,12 +209,12 @@ Bash         29 mins         ▓░░░░░░░░░░░░░░░░
 
 <!--END_SECTION:waka-->
 
-<figure><embed src="https://wakatime.com/share/@SubhamN2006/a4956f1b-5c7a-4a50-8926-cc75d60a7da0.svg"></embed></figure>
+
+
+<figure><embed src="https://wakatime.com/share/@SubhamN2006/65505277-ad67-4bc0-8039-e93c362e55f8.svg"></embed></figure>
+
 
 <!-- Cyan Wave Footer - shorter height -->
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=130&section=footer&animation=fadeIn)
-
-
-
 
 
