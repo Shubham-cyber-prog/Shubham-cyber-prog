@@ -195,8 +195,12 @@ For future use
  > 
 > 📜 11 Public Repositories 
  > 
-> 🔑 1 Private Repositories 
+> 🔑 1 Private Repositories
+
  > 
+
+<figure><embed src="https://wakatime.com/share/@SubhamN2006/65505277-ad67-4bc0-8039-e93c362e55f8.svg"></embed></figure>
+
 <!--START_SECTION:waka-->
 
 ```txt
@@ -211,7 +215,6 @@ Bash         29 mins         ▓░░░░░░░░░░░░░░░░
 
 
 
-<figure><embed src="https://wakatime.com/share/@SubhamN2006/65505277-ad67-4bc0-8039-e93c362e55f8.svg"></embed></figure>
 
 
 <!-- Cyan Wave Footer - shorter height -->
