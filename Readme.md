@@ -167,7 +167,36 @@ For future use
   <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
 </div>
 
+<br/>
 
+<summary>
+  <g-emoji class="g-emoji" alias="chart_with_upwards_trend" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c8.png">📈</g-emoji>
+  <strong>𝚆𝚊𝚔𝚊𝚃𝚒𝚖𝚎 𝚂𝚝𝚊𝚝𝚜 : </strong>
+</summary>
+
+<a href="https://wakatime.com/">
+  <img align="right" height="330px" width="450px" src="https://wakatime.com/share/@SubhamN2006/1b93c90a-4221-4411-bc25-a896a9de3759.png" />
+</a>
+
+<br>
+
+<!--START_SECTION:waka-->
+![Code Time](https://wakatime.com/badge/user/04ae4d42-f7cb-4e4a-9801-1cd54e703de6.svg)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-10.0%20million%20lines%20of%20code-blue)
+
+**🐱 My GitHub Data** 
+
+> 📦 3.2 MB Used in GitHub's Storage 
+ > 
+> 🏆 273 Contributions in the Year 2025
+ > 
+> 💼 Open to Work / Hire
+ > 
+> 📜 11 Public Repositories 
+ > 
+> 🔑 1 Private Repositories 
+ > 
 <!--START_SECTION:waka-->
 
 ```txt
