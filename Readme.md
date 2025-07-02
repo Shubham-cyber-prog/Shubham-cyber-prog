@@ -180,6 +180,23 @@ For future use
 
 <br>
 
+<a href="https://wakatime.com/@04ae4d42-f7cb-4e4a-9801-1cd54e703de6"><img src="https://wakatime.com/badge/user/04ae4d42-f7cb-4e4a-9801-1cd54e703de6.svg" alt="Total time coded since Jun 6 2025" /></a>
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-10.0%20million%20lines%20of%20code-blue)
+
+**🐱 My GitHub Data** 
+
+> 📦 5.2 MB Used in GitHub's Storage 
+ > 
+> 🏆 310 Contributions in the Year 2025
+ > 
+> 💼 Open to Work 
+ > 
+> 📜 11 Public Repositories 
+ > 
+> 🔑 1 Private Repositories 
+ > 
+
 <!--START_SECTION:waka-->
 
 ```txt
