@@ -1,41 +1,17 @@
-name: 🧮 Generate GitHub Metrics
-
+name: Metrics
 on:
-  schedule: [{ cron: "0 0 * * *" }]
-  push: { branches: ["main"] }
+  schedule: [{cron: "0 0 * * *"}]
   workflow_dispatch:
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-
     steps:
-      - name: 📊 Metrics
+      - name: Generate metrics
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          user: Shubham-cyber-prog
-
-          base: header, activity, community, repositories, metadata
-
-          config_timezone: Asia/Kolkata
-
-          # Plugins
-          plugin_isocalendar: yes                # Weekly commits calendar
-          plugin_languages: yes                  # Programming languages
-          plugin_languages_ignored: html, css
-          plugin_languages_skipped: metrics
-          plugin_lines: yes                      # Total lines of code
-          plugin_followup: yes                   # Recent activity
-          plugin_stargazers: yes                 # Recent stargazers
-          plugin_traffic: yes                    # Repo traffic
-          plugin_wakatime: yes                   # WakaTime integration
-          wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-
-          plugin_habits: yes                     # Time-of-day + day-of-week habits
-          plugin_habits_charts: true             # Enable bar charts
-          plugin_habits_trim: false              # Show all 7 days
-
-          plugin_projects: yes
-          plugin_projects_repositories: Shubham-cyber-prog/metrics, Shubham-cyber-prog/Shubham-cyber-prog
+          user: SubhamN2006
+          base: header, activity, community
+          plugin_languages: yes
+          plugin_lines: yes
