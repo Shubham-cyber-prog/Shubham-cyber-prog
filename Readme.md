@@ -181,34 +181,13 @@ For future use
 <br>
 
 <!--START_SECTION:waka-->
-![Code Time](https://wakatime.com/badge/user/04ae4d42-f7cb-4e4a-9801-1cd54e703de6.svg)
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-10.0%20million%20lines%20of%20code-blue)
-
-**🐱 My GitHub Data** 
-
-> 📦 3.2 MB Used in GitHub's Storage 
- > 
-> 🏆 273 Contributions in the Year 2025
- > 
-> 💼 Open to Work / Hire
- > 
-> 📜 11 Public Repositories 
- > 
-> 🔑 1 Private Repositories
-
- > 
-
-
-
-<!--START_SECTION:waka-->
 
 ```txt
-JavaScript   14 hrs 48 mins  ███████████████░░░░░░░░░░   60.34 %
-HTML         4 hrs 47 mins   █████░░░░░░░░░░░░░░░░░░░░   19.51 %
-Markdown     2 hrs 42 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   11.02 %
-CSS          1 hr 8 mins     █▒░░░░░░░░░░░░░░░░░░░░░░░   04.67 %
-Bash         29 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.02 %
+JavaScript   12 hrs 18 mins  ████████████████▒░░░░░░░░   65.21 %
+HTML         2 hrs 36 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   13.81 %
+Markdown     2 hrs 1 min     ██▓░░░░░░░░░░░░░░░░░░░░░░   10.74 %
+CSS          1 hr 8 mins     █▓░░░░░░░░░░░░░░░░░░░░░░░   06.03 %
+Bash         29 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.63 %
 ```
 
 <!--END_SECTION:waka-->
