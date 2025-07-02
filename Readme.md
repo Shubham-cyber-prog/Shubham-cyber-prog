@@ -130,13 +130,8 @@
 
 </div>
 <br>
-<div align="center"><a href="#"><img alt="" width="100%" src="assets/datascience.gif"></a></div>
+<div align="center"><a href="#"><img alt="" width="100%" src="datascience.gif"></a></div>
 <hr/>
-<div align="center">
-    <a href="#">
-        <img alt="thanks for visiting!" src="https://readme-typing-svg.herokuapp.com?font=Righteous&color=34F700&&size=26&&duration=2600&center=true&vCenter=true&width=300&lines=Thanks+for+visiting!;Have+a+great+day,+Coder!">
-    </a>
-</div>
 
 
 
@@ -233,11 +228,18 @@ Bash         29 mins         ▓░░░░░░░░░░░░░░░░
 
 ![WakaTime Stats](https://wakatime.com/share/@SubhamN2006/65505277-ad67-4bc0-8039-e93c362e55f8.svg)
 
+<div align="center">
+    <a href="#">
+        <img alt="thanks for visiting!" src="https://readme-typing-svg.herokuapp.com?font=Righteous&color=34F700&&size=26&&duration=2600&center=true&vCenter=true&width=300&lines=Thanks+for+visiting!;Have+a+great+day,+Coder!">
+    </a>
+</div>
+
 
 <p align="center">
   <img height="50" width="50" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"/>  
   <h4 align="center"><code>📊 𝙶𝚒𝚝𝙷𝚞𝚋 𝙼𝚎𝚝𝚛𝚒𝚌𝚜</code></h4>
 </p>
+
 
 
 
