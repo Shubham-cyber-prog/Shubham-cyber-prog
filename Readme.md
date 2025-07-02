@@ -114,9 +114,30 @@
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubham-cyber-prog&theme=2077" alt="Profile Details" />
    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=2077" alt="GitHub Stats" />
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shubham-cyber-prog&theme=2077" alt="Most Commit Language" />
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shubham-cyber-prog&theme=2077&utcOffset=8" 
-    alt="Productive Time"   width="847"   height="262"/>
+ 
 </p>
+
+<h2 align="center">⚡ More About Me ⚡</h2>
+<a href="#"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=3382ED&center=true&vCenter=true&random=false&width=600&lines=Frontend+Developer+%F0%9F%92%BB;Full+Stack+Enthusiast+%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB;React+%2B+Node+%2B+MongoDB+%F0%9F%92%80" ></a>
+
+<div align="center" style="font-size: 16px; line-height: 1.8;">
+
+🔭 <b>Currently working on:</b> Full Stack Projects and Hackathons  
+🌱 <b>Learning:</b> AI, System Design, and DevOps  
+👯 <b>Looking to collaborate on:</b> MERN Stack or Hackathon Projects  
+💬 <b>Ask me about:</b> React, JavaScript, Node.js, MongoDB, UI/UX  
+⚡ <b>Fun fact:</b> I debug faster when I play Lofi beats!
+
+</div>
+<br>
+<div align="center"><a href="#"><img alt="" width="100%" src="assets/datascience.gif"></a></div>
+<hr/>
+<div align="center">
+    <a href="#">
+        <img alt="thanks for visiting!" src="https://readme-typing-svg.herokuapp.com?font=Righteous&color=34F700&&size=26&&duration=2600&center=true&vCenter=true&width=300&lines=Thanks+for+visiting!;Have+a+great+day,+Coder!">
+    </a>
+</div>
+
 
 
 <!--
