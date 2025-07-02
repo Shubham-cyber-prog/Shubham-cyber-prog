@@ -118,8 +118,6 @@
 </p>
 
 <h2 align="center">⚡ More About Me ⚡</h2>
-<a href="#"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=3382ED&center=true&vCenter=true&random=false&width=600&lines=Frontend+Developer+%F0%9F%92%BB;Full+Stack+Enthusiast+%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB;React+%2B+Node+%2B+MongoDB+%F0%9F%92%80" ></a>
-
 <div align="center" style="font-size: 16px; line-height: 1.8;">
 
 🔭 <b>Currently working on:</b> Full Stack Projects and Hackathons  
