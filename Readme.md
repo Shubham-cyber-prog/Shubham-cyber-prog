@@ -223,7 +223,6 @@ Bash         43 mins         ██░░░░░░░░░░░░░░░
 
 <!--END_SECTION:waka-->
 
-
 ![WakaTime Stats](https://wakatime.com/share/@SubhamN2006/65505277-ad67-4bc0-8039-e93c362e55f8.svg)
 
 <div align="center">
