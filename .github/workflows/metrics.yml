@@ -1,8 +1,9 @@
+
 name: Metrics
 
 on:
   schedule:
-    - cron: "0 * * * *" # Every hour
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -12,19 +13,12 @@ jobs:
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
-          # Required
           token: ${{ secrets.MY_SECRET_TOKEN }}
-
-          # Basic info
           user: shubham-cyber-prog
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity, community, repositories
           config_timezone: Asia/Kolkata
 
-          # Optional Plugins
+          # Keep only safe plugins for now
           plugin_languages: yes
-          plugin_followup: yes
-          plugin_achievements: yes
-          plugin_lines: yes
           plugin_stars: yes
-          plugin_repositories: yes
