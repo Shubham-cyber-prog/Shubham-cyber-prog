@@ -52,3 +52,12 @@ jobs:
           plugin_topics: yes
           plugin_topics_mode: starred
           plugin_topics_sort: stars
+
+          # ⌨️ WakaTime Coding Activity
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+          plugin_wakatime_days: 7
+          plugin_wakatime_limit: 5
+
+    
+
