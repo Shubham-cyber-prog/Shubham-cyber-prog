@@ -14,7 +14,7 @@ jobs:
         with:
           token: ${{ secrets.MY_SECRET_TOKEN }}
           user: shubham-cyber-prog
-          template: classic
+          template: classic-wide
           config_timezone: Asia/Kolkata
           config_achievements: yes
           config_notable: yes
