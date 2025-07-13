@@ -1,9 +1,8 @@
-
 name: Metrics
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"  # Run every hour
   workflow_dispatch:
 
 jobs:
@@ -13,12 +12,43 @@ jobs:
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
+          # Required
           token: ${{ secrets.MY_SECRET_TOKEN }}
           user: shubham-cyber-prog
           template: classic
-          base: header, activity, community, repositories
           config_timezone: Asia/Kolkata
+          base: header, activity, community, repositories, metadata
 
-          # Keep only safe plugins for now
+          # 🟦 Languages Used
           plugin_languages: yes
+          plugin_languages_limit: 8
+
+          # ⭐ Stars count
           plugin_stars: yes
+
+          # 📅 3D Contribution Calendar
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # 🕒 Coding Habits
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+          # 🏅 Achievements
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+
+          # 🔍 Follow-up Issues
+          plugin_followup: yes
+
+          # 🗃️ Repositories display
+          plugin_repositories: yes
+
+          # 👁️ Repo traffic (views/clones)
+          plugin_traffic: yes
+
+          # 🏷️ Topics/tags used in your repos
+          plugin_topics: yes
+          plugin_topics_mode: starred
+          plugin_topics_sort: stars
