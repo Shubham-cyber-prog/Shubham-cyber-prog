@@ -1,21 +1,30 @@
-
 name: Metrics
+
 on:
-  schedule: [{ cron: "0 * * * *" }] # every hour
+  schedule:
+    - cron: "0 * * * *" # Every hour
   workflow_dispatch:
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: Metrics embed
+      - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
           # Required
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.MY_SECRET_TOKEN }}
 
-          # Options (choose as needed)
+          # Basic info
           user: shubham-cyber-prog
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Kolkata
+
+          # Optional Plugins
+          plugin_languages: yes
+          plugin_followup: yes
+          plugin_achievements: yes
+          plugin_lines: yes
+          plugin_stars: yes
+          plugin_repositories: yes
