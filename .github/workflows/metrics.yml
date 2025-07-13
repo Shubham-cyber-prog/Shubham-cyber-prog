@@ -59,5 +59,11 @@ jobs:
           plugin_wakatime_days: 7
           plugin_wakatime_limit: 5
 
+          plugin_reactions: yes
+          plugin_people: yes
+          plugin_people_types: followers, following
+
+
+
     
 
