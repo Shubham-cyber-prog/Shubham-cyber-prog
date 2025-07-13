@@ -1,9 +1,8 @@
-
 name: Metrics
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"  # Run every hour
   workflow_dispatch:
 
 jobs:
@@ -15,42 +14,67 @@ jobs:
         with:
           token: ${{ secrets.MY_SECRET_TOKEN }}
           user: shubham-cyber-prog
-          template: classic-wide   # 🔥 Makes the card full-width
+          template: classic
+          config_timezone: Asia/Kolkata
+          config_achievements: yes
+          config_notable: yes
+          config_repositories: 100
+          config_lines: yes
+          config_traffic: yes
+          config_stars: yes
+          config_gists: yes
+          config_discussions: yes
           base: header, activity, community, repositories, metadata
 
+          # 🟦 Languages Used
           plugin_languages: yes
           plugin_languages_limit: 8
 
+          # ⭐ Stars count
           plugin_stars: yes
-          plugin_repositories: yes
-          plugin_topics: yes
-          plugin_topics_mode: starred
-          plugin_topics_sort: stars
 
+          # 📅 3D Contribution Calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
+          # 🕒 Coding Habits
           plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: yes
 
+          # 🏅 Achievements
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_threshold: C
           plugin_achievements_secrets: no
-          plugin_achievements_limit: 6
+          plugin_achievements_limit: 5
 
+          # 🔍 Follow-up Issues
           plugin_followup: yes
+
+          # 🗃️ Repositories display
+          plugin_repositories: yes
+
+          # 👁️ Repo traffic (views/clones)
+          plugin_traffic: yes
+
+          # 🏷️ Topics/tags used in your repos
+          plugin_topics: yes
+          plugin_topics_mode: starred
+          plugin_topics_sort: stars
+
+          # ⌨️ WakaTime Coding Activity
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
           plugin_wakatime_days: 7
           plugin_wakatime_limit: 5
 
+          # 💬 Reactions
           plugin_reactions: yes
+
+          # 👥 People
           plugin_people: yes
           plugin_people_types: followers, following
-          plugin_lines: yes
-          plugin_gists: yes
-          plugin_discussions: yes
 
+          # 🐞 Debugging (temporary)
           debug: yes
