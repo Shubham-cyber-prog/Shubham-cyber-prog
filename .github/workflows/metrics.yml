@@ -16,7 +16,6 @@ jobs:
           user: shubham-cyber-prog
           template: classic
           config_timezone: Asia/Kolkata
-          config_achievements: yes
           config_notable: yes
           config_repositories: 100
           config_lines: yes
