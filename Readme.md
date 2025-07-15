@@ -104,8 +104,6 @@
   </a>
 </p>
 
-
-
 <h2 align="center">📊 GitHub Summary</h2>
 
 <p align="center">
@@ -223,13 +221,6 @@ HTML         36 mins         ▓░░░░░░░░░░░░░░░░
 
 ![WakaTime Stats](https://wakatime.com/share/@SubhamN2006/65505277-ad67-4bc0-8039-e93c362e55f8.svg)
 
-<div align="center">
-    <a href="#">
-        <img alt="thanks for visiting!" src="https://readme-typing-svg.herokuapp.com?font=Righteous&color=34F700&&size=26&&duration=2600&center=true&vCenter=true&width=300&lines=Thanks+for+visiting!;Have+a+great+day,+Coder!">
-    </a>
-</div>
-
-
 <p align="center">
   <img height="50" width="50" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"/>  
   <h4 align="center"><code>📊 𝙶𝚒𝚝𝙷𝚞𝚋 𝙼𝚎𝚝𝚛𝚒𝚌𝚜</code></h4>
@@ -237,10 +228,12 @@ HTML         36 mins         ▓░░░░░░░░░░░░░░░░
 
 ![Metrics](https://raw.githubusercontent.com/shubham-cyber-prog/shubham-cyber-prog/main/github-metrics.svg)
 
-
-
 <!-- Cyan Wave Footer - shorter height -->
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=130&section=footer&animation=fadeIn)
 
-
+<div align="center">
+    <a href="#">
+        <img alt="thanks for visiting!" src="https://readme-typing-svg.herokuapp.com?font=Righteous&color=34F700&&size=26&&duration=2600&center=true&vCenter=true&width=300&lines=Thanks+for+visiting!;Have+a+great+day,+Coder!">
+    </a>
+</div>
 
