@@ -225,11 +225,11 @@ For future use
 
 > 📦 5.2 MB Used in GitHub's Storage 
  > 
-> 🏆 330 Contributions in the Year 2025
+> 🏆 420 Contributions in the Year 2025
  > 
 > 💼 Open to Work 
  > 
-> 📜 11 Public Repositories 
+> 📜 18 Public Repositories 
  > 
 > 🔑 1 Private Repositories 
  > 
