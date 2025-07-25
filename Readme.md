@@ -129,7 +129,7 @@
   </a>
 </p>
 
-
+[![Holopin Badge](https://holopin.me/shubhamcyberprog)](https://holopin.io/@shubhamcyberprog)
 
 <h2 align="center">📊 GitHub Summary</h2>
 
@@ -219,30 +219,82 @@ For future use
 
 <a href="https://wakatime.com/@04ae4d42-f7cb-4e4a-9801-1cd54e703de6"><img src="https://wakatime.com/badge/user/04ae4d42-f7cb-4e4a-9801-1cd54e703de6.svg" alt="Total time coded since Jun 6 2025" /></a>
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-10.0%20million%20lines%20of%20code-blue)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.9%20million%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
-> 📦 5.2 MB Used in GitHub's Storage 
+> 📦 ? Used in GitHub's Storage 
  > 
-> 🏆 420 Contributions in the Year 2025
+> 🏆 425 Contributions in the Year 2025
  > 
-> 💼 Open to Work 
+> 🚫 Not Opted to Hire
  > 
-> 📜 18 Public Repositories 
+> 📜 19 Public Repositories 
  > 
-> 🔑 1 Private Repositories 
+> 🔑 0 Private Repositories 
  > 
+**I'm an Early 🐤** 
 
-<!--START_SECTION:waka-->
-
-```txt
-JavaScript   2 hrs 7 mins    ███████████▒░░░░░░░░░░░░░   45.11 %
-Bash         42 mins         ███▓░░░░░░░░░░░░░░░░░░░░░   15.12 %
-JSON         39 mins         ███▒░░░░░░░░░░░░░░░░░░░░░   13.95 %
-CSS          30 mins         ██▓░░░░░░░░░░░░░░░░░░░░░░   10.92 %
-C++          22 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.82 %
+```text
+🌞 Morning                160 commits         ██████░░░░░░░░░░░░░░░░░░░   23.05 % 
+🌆 Daytime                243 commits         █████████░░░░░░░░░░░░░░░░   35.01 % 
+🌃 Evening                289 commits         ██████████░░░░░░░░░░░░░░░   41.64 % 
+🌙 Night                  2 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.29 % 
 ```
+📅 **I'm Most Productive on Saturday** 
+
+```text
+Monday                   94 commits          ███░░░░░░░░░░░░░░░░░░░░░░   13.54 % 
+Tuesday                  73 commits          ███░░░░░░░░░░░░░░░░░░░░░░   10.52 % 
+Wednesday                67 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   09.65 % 
+Thursday                 62 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.93 % 
+Friday                   60 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.65 % 
+Saturday                 206 commits         ███████░░░░░░░░░░░░░░░░░░   29.68 % 
+Sunday                   132 commits         █████░░░░░░░░░░░░░░░░░░░░   19.02 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Kolkata
+
+💬 Programming Languages: 
+JavaScript               2 hrs 7 mins        ███████████░░░░░░░░░░░░░░   45.11 % 
+Bash                     42 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.12 % 
+JSON                     39 mins             ███░░░░░░░░░░░░░░░░░░░░░░   13.95 % 
+CSS                      30 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.92 % 
+C++                      22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.82 % 
+
+🔥 Editors: 
+VS Code                  4 hrs 43 mins       █████████████████████████   100.00 % 
+
+🐱‍💻 Projects: 
+MERN-Expense-Tracker     2 hrs 25 mins       █████████████░░░░░░░░░░░░   51.35 % 
+Book-Reading-Tracker     1 hr 4 mins         ██████░░░░░░░░░░░░░░░░░░░   22.72 % 
+CPP                      22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.86 % 
+backend                  17 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.33 % 
+Unknown Project          14 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.16 % 
+
+💻 Operating System: 
+Linux                    4 hrs 43 mins       █████████████████████████   100.00 % 
+```
+
+**I Mostly Code in JavaScript** 
+
+```text
+JavaScript               7 repos             █████████░░░░░░░░░░░░░░░░   36.84 % 
+HTML                     6 repos             ████████░░░░░░░░░░░░░░░░░   31.58 % 
+CSS                      4 repos             █████░░░░░░░░░░░░░░░░░░░░   21.05 % 
+TypeScript               1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   05.26 % 
+Ruby                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   05.26 % 
+```
+
+
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/Shubham-cyber-prog/Shubham-cyber-prog/main/assets/bar_graph.png)
 
 <!--END_SECTION:waka-->
 
