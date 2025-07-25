@@ -219,26 +219,6 @@ For future use
 
 <a href="https://wakatime.com/@04ae4d42-f7cb-4e4a-9801-1cd54e703de6"><img src="https://wakatime.com/badge/user/04ae4d42-f7cb-4e4a-9801-1cd54e703de6.svg" alt="Total time coded since Jun 6 2025" /></a>
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-10.0%20million%20lines%20of%20code-blue)
-
-**🐱 My GitHub Data** 
-
-> 📦 5.2 MB Used in GitHub's Storage 
- > 
-> 🏆 420 Contributions in the Year 2025
- > 
-> 💼 Open to Work 
- > 
-> 📜 18 Public Repositories 
- > 
-> 🔑 1 Private Repositories 
- > 
-
-<!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-94%20hrs%2013%20mins-blue)
-
-![Profile Views](http://img.shields.io/badge/Profile%20Views-618-blue)
-
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.9%20million%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
@@ -316,8 +296,6 @@ Ruby                     1 repo              █░░░░░░░░░░�
 
 ![Lines of Code chart](https://raw.githubusercontent.com/Shubham-cyber-prog/Shubham-cyber-prog/main/assets/bar_graph.png)
 
-
- Last Updated on 25/07/2025 06:25:40 UTC
 <!--END_SECTION:waka-->
 
 ![WakaTime Stats](https://wakatime.com/share/@SubhamN2006/65505277-ad67-4bc0-8039-e93c362e55f8.svg)
