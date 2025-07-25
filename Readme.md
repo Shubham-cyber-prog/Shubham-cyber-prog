@@ -129,10 +129,6 @@
   </a>
 </p>
 
-[![Holopin Badge](https://holopin.me/shubhamcyberprog)](https://holopin.io/@shubhamcyberprog)
-
-
-
 <h2 align="center">📊 GitHub Summary</h2>
 
 <p align="center">
@@ -157,6 +153,15 @@
 <hr/>
 
 
+[![Holopin Badge](https://holopin.me/shubhamcyberprog)](https://holopin.io/@shubhamcyberprog)
+
+
+## Certification Badges 🪶
+<div style='display:flex; align-items:center; gap: 10px;' align='center'>
+<a href="https://www.credly.com/badges/c2edaee0-1a9a-484f-9b24-275dbf1e1446/public_url" target="_blank">
+  <img src="https://images.credly.com/size/110x110/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png" alt="Cisco Cybersecurity Badge" width="120px" />
+</a>
+</div>
 
 <!--
 For future use
