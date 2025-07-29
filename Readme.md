@@ -1,3 +1,4 @@
+
 ![header](https://user-images.githubusercontent.com/73928744/182041587-527d010a-80d3-4b57-bd99-c2be13c1a516.png)
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=270&section=header&text=Subham%20Nayak&fontSize=70&fontAlignY=35&desc=FullStack%20Developer%20%7C%20CS%20Student&descAlignY=60&descSize=20&animation=fadeIn&fontColor=ffffff)
@@ -138,9 +139,8 @@
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubham-cyber-prog&theme=2077" alt="Profile Details" />
    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=2077" alt="GitHub Stats" />
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shubham-cyber-prog&theme=2077" alt="Most Commit Language" />
- 
 </p>
-
+  
 <h2 align="center">⚡ More About Me ⚡</h2>
 <div align="center" style="font-size: 16px; line-height: 1.8;">
 
