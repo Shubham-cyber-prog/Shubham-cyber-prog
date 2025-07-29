@@ -1,0 +1,21 @@
+name: 🌐 GitHub Pages Uptime Monitor
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"  # Every 30 mins
+  workflow_dispatch:
+
+jobs:
+  check-uptime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check GitHub Pages URL
+        run: |
+          URL="https://shubham-cyber-prog.github.io"
+          echo "Checking $URL ..."
+          if curl -Is $URL | head -n 1 | grep "200\|301\|302" > /dev/null; then
+            echo "✅ $URL is UP!"
+          else
+            echo "❌ $URL is DOWN!"
+            exit 1
+          fi
