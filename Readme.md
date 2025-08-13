@@ -330,4 +330,3 @@ Ruby                     1 repo              █░░░░░░░░░░�
         <img alt="thanks for visiting!" src="https://readme-typing-svg.herokuapp.com?font=Righteous&color=34F700&&size=26&&duration=2600&center=true&vCenter=true&width=300&lines=Thanks+for+visiting!;Have+a+great+day,+Coder!">
     </a>
 </div>
-
