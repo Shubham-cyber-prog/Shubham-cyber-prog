@@ -44,7 +44,6 @@
   <img height="170" width="160" src="right.webp" />
 </p>
 
-
 <h3 align="center">Connect with Me</h3>
 <p align="center">
   <a href="https://linkedin.com/in/subham-nayak-00276930b" target="_blank">
