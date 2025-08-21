@@ -148,7 +148,6 @@
 <div align="center"><a href="#"><img alt="" width="100%" src="datascience.gif"></a></div>
 <hr/>
 
-
 [![Holopin Badge](https://holopin.me/shubhamcyberprog)](https://holopin.io/@shubhamcyberprog)
 
 
