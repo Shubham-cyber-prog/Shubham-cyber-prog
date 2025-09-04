@@ -1,0 +1,30 @@
+name: Welcome Bot
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add welcome comment on Issues
+        if: github.event_name == 'issues'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            👋 Hi @${{ github.actor }}!  
+            Thanks for opening this issue 🎉.  
+            A maintainer will review it soon 🚀.  
+
+      - name: Add welcome comment on PR
+        if: github.event_name == 'pull_request'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            🙌 Thanks @${{ github.actor }} for your contribution!  
+            Your PR looks great, and we’ll review it shortly. ✨
