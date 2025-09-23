@@ -75,10 +75,11 @@ jobs:
           plugin_people: yes
           plugin_people_types: followers, following
 
-          # 🟨 LeetCode (added)
+         # 🟨 LeetCode Stats
           plugin_leetcode: yes
           plugin_leetcode_user: SubhamN2006
-          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_sections: solved, skills, contests
+          plugin_leetcode_limit_recent: 5
 
           # 🐞 Debugging (temporary)
           debug: yes
