@@ -81,5 +81,4 @@ jobs:
           plugin_leetcode_sections: solved, skills, contests
           plugin_leetcode_limit_recent: 5
 
-          # 🐞 Debugging (temporary)
-          debug: yes
+   
