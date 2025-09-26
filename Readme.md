@@ -310,7 +310,8 @@ Ruby                     1 repo              █░░░░░░░░░░�
 
 <!--END_SECTION:waka-->
 
-![WakaTime Stats](https://wakatime.com/share/@SubhamN2006/65505277-ad67-4bc0-8039-e93c362e55f8.svg)
+![WakaTime Stats](<a href="https://wakatime.com"><img src="https://wakatime.com/share/@SubhamN2006/a9962278-0265-4b5e-94a8-1e310fabea91.png" /></a>)
+
 
 <p align="center">
   <img height="50" width="50" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"/>  
