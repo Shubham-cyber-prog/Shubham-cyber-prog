@@ -1,3 +1,4 @@
+
 name: Metrics
 
 on:
@@ -12,7 +13,7 @@ jobs:
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.MY_SECRET_TOKEN }}
+          token: ${{ secrets.GH_METRICS_KEY }}
           user: shubham-cyber-prog
           template: classic
           config_timezone: Asia/Kolkata
@@ -75,10 +76,8 @@ jobs:
           plugin_people: yes
           plugin_people_types: followers, following
 
-         # 🟨 LeetCode Stats
+          # 🟨 LeetCode Stats
           plugin_leetcode: yes
           plugin_leetcode_user: SubhamN2006
           plugin_leetcode_sections: solved, skills, contests
           plugin_leetcode_limit_recent: 5
-
-   
