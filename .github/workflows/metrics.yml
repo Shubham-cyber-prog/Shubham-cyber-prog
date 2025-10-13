@@ -1,4 +1,3 @@
-
 name: Metrics
 
 on:
@@ -26,12 +25,27 @@ jobs:
           config_discussions: yes
           base: header, activity, community, repositories, metadata
 
+          # 🎨 Personalization
+          config_title: Shubham's GitHub Stats
+          config_display: large
+          config_order: activity, community, repositories, metadata
+
           # 🟦 Languages Used
           plugin_languages: yes
-          plugin_languages_limit: 8
+          plugin_languages_limit: 10
+          plugin_languages_threshold: 0.5%
+          plugin_languages_aliases: css: CSS, javascript: JavaScript
+          plugin_languages_colors: github
+          plugin_languages_details: percentage, bytes-size
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout_repositories: 15
+          plugin_languages_categories: programming, markup, data
+          plugin_languages_recent_categories: programming, markup, data
+          plugin_languages_sections: most-used, recently-used
 
           # ⭐ Stars count
           plugin_stars: yes
+          plugin_stars_limit: 8
 
           # 📅 3D Contribution Calendar
           plugin_isocalendar: yes
@@ -41,43 +55,118 @@ jobs:
           plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: yes
+          plugin_habits_days: 14
+          plugin_habits_facts_types: commits, prs, issues, reviews
 
           # 🏅 Achievements
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_threshold: C
           plugin_achievements_secrets: no
-          plugin_achievements_limit: 5
+          plugin_achievements_limit: 8
 
           # 🔍 Follow-up Issues
           plugin_followup: yes
+          plugin_followup_sections: pending, resolved
 
           # 🗃️ Repositories display
           plugin_repositories: yes
+          plugin_repositories_limit: 12
+          plugin_repositories_features: stars, forks, languages
+          plugin_repositories_description: yes
 
           # 👁️ Repo traffic (views/clones)
           plugin_traffic: yes
+          plugin_traffic_days: 14
+          plugin_traffic_per_repository: 4
 
           # 🏷️ Topics/tags used in your repos
           plugin_topics: yes
           plugin_topics_mode: starred
           plugin_topics_sort: stars
+          plugin_topics_limit: 15
 
           # ⌨️ WakaTime Coding Activity
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
           plugin_wakatime_days: 7
-          plugin_wakatime_limit: 5
+          plugin_wakatime_limit: 8
+          plugin_wakatime_sections: time, projects, languages, editors
+          plugin_wakatime_url: https://wakatime.com/@SubhamN2006
 
           # 💬 Reactions
           plugin_reactions: yes
+          plugin_reactions_types: +1, -1, laugh, confused, heart, hooray, rocket, eyes
 
           # 👥 People
           plugin_people: yes
           plugin_people_types: followers, following
+          plugin_people_limit: 24
+          plugin_people_size: 28
+          plugin_people_identicons: yes
 
           # 🟨 LeetCode Stats
           plugin_leetcode: yes
           plugin_leetcode_user: SubhamN2006
-          plugin_leetcode_sections: solved, skills, contests
-          plugin_leetcode_limit_recent: 5
+          plugin_leetcode_sections: solved, skills, contests, recent
+          plugin_leetcode_limit_recent: 8
+          plugin_leetcode_limit_skills: 10
+
+          # 🆕 New Additions:
+
+          # 📊 GitHub Stats Cards
+          plugin_gists: yes
+          plugin_gists_description: yes
+          plugin_gists_limit: 6
+
+          # 🗂️ Organizations
+          plugin_organizations: yes
+          plugin_organizations_limit: 12
+
+          # 📈 Contribution Graph
+          plugin_contributions: yes
+          plugin_contributions_days: 365
+          plugin_contributions_limit: 1000
+
+          # 🔥 Streak Stats
+          plugin_streak: yes
+          plugin_streak_days: 365
+          plugin_streak_contributions: yes
+
+          # 📝 GitHub Pages
+          plugin_pages: yes
+          plugin_pages_build: yes
+
+          # 🎯 Skill Icons
+          plugin_icons: yes
+          plugin_icons_per_row: 8
+          plugin_icons_size: 32
+
+          # 🌟 Stargazers
+          plugin_stargazers: yes
+          plugin_stargazers_limit: 12
+
+          # 📌 Pinned Repositories
+          plugin_pin: yes
+          plugin_pin_limit: 6
+
+          # 🔄 Recent Activity
+          plugin_activity: yes
+          plugin_activity_limit: 10
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_visibility: public
+
+          # 📚 Repository Metrics
+          plugin_lines: yes
+          plugin_lines_history: yes
+          plugin_lines_repositories: 25
+
+          # 🏆 Trophy Stats
+          plugin_trophy: yes
+          plugin_trophy_rank: SS
+          plugin_trophy_progress: yes
+
+          # 🎨 Custom CSS (Optional)
+          plugin_intro: yes
+          plugin_outro: yes
