@@ -85,13 +85,11 @@ jobs:
           plugin_topics_sort: stars
           plugin_topics_limit: 15
 
-          # ⌨️ WakaTime Coding Activity
+             # ⌨️ WakaTime Coding Activity
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
           plugin_wakatime_days: 7
-          plugin_wakatime_limit: 8
-          plugin_wakatime_sections: time, projects, languages, editors
-          plugin_wakatime_url: https://wakatime.com/@SubhamN2006
+          plugin_wakatime_limit: 5
 
           # 💬 Reactions
           plugin_reactions: yes
