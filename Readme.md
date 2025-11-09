@@ -21,7 +21,7 @@
 </p>
 
 - 🔭 I’m currently working on [Portfolio](https://tripolio.netlify.app/)
-- 🌱 I’m currently learning **Express.js**, **React.js**, **Node.js**, **Docker**, and **DevOps**
+- 🌱 I’m currently learning **Node.js**, **Docker**, and **DevOps**
 - 👨‍💻 All of my projects are available at [GitHub](https://github.com/Shubham-cyber-prog)
 - 📫 Reach me at: **sn343555@gmail.com**
 - 📄 Check out my [Resume](https://drive.google.com/file/d/18LQPmXDf634owLnqbpXtWU4CICSZixSO/view?usp=drivesdk)
