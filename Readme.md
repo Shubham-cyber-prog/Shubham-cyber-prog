@@ -20,15 +20,12 @@
 </a>
 </p>
 
-- 🔭 I’m currently working on [Portfolio](https://shubham-cyber-prog.github.io/portfolio/)
-
-- 🌱 I’m currently learning **Express.js**, **React.js**, and **Node.js**
-
+- 🔭 I’m currently working on [Portfolio](https://tripolio.netlify.app/)
+- 🌱 I’m currently learning **Express.js**, **React.js**, **Node.js**, **Docker**, and **DevOps**
 - 👨‍💻 All of my projects are available at [GitHub](https://github.com/Shubham-cyber-prog)
-
 - 📫 Reach me at: **sn343555@gmail.com**
-
 - 📄 Check out my [Resume](https://drive.google.com/file/d/18LQPmXDf634owLnqbpXtWU4CICSZixSO/view?usp=drivesdk)
+
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
 
