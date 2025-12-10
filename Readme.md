@@ -27,6 +27,7 @@
 - 📄 Check out my [Resume](https://drive.google.com/file/d/18LQPmXDf634owLnqbpXtWU4CICSZixSO/view?usp=drivesdk)
 
 
+
 [![trophy](https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
 
 
