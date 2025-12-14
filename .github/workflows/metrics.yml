@@ -33,9 +33,7 @@ jobs:
 
           plugin_stars: yes
           plugin_stars_limit: 4
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
+     
 
           plugin_people: yes
           plugin_people_types: followers, following
