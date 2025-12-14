@@ -1,232 +1,142 @@
-
-name: 📊 GitHub Metrics Pro
-
+   name: 📊 GitHub Metrics Pro
 on:
   schedule:
-    - cron: "*/30 * * * *"  # Every 30 minutes for fresher data
+    - cron: "0 */6 * * *"  # Every 6 hours (rate limit friendly)
   workflow_dispatch:
     inputs:
-      refresh_all:
-        description: 'Force refresh all plugins'
+      force_refresh:
+        description: 'Force complete refresh'
         required: false
         default: 'false'
 
+# Cache settings for faster runs
+env:
+  CACHE_KEY: metrics-${{ github.sha }}
+
 jobs:
-  metrics:
+  generate-metrics:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: read
+    
     steps:
-      - name: Generate GitHub Metrics
-        uses: lowlighter/metrics@v3.22  # Pin to specific stable version
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
-          # 🔐 SECURITY & PERFORMANCE
-          token: ${{ secrets.METRICS_TOKEN }}  # Renamed for clarity
-          committer_token: ${{ secrets.GITHUB_TOKEN }}  # For better rate limits
-          committer_email: ${{ secrets.EMAIL }}  # Custom email for commits
-          committer_name: "GitHub Metrics Bot"
+          fetch-depth: 0
           
-          # 🎯 TARGET USER
+      - name: Setup Cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.metrics
+          key: ${{ env.CACHE_KEY }}
+          
+      - name: Generate GitHub Metrics
+        uses: lowlighter/metrics@v3.22
+        with:
+          # 🔐 TOKEN CONFIGURATION (FIXED)
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          
+          # 📍 USER & TEMPLATE
           user: Shubham-cyber-prog
           template: classic
           
-          # 📱 RESPONSIVE LAYOUT
-          base: header, activity, community, repositories, metadata
+          # 🎯 BASIC CONFIG
+          base: header, activity, community, repositories
           config_timezone: Asia/Kolkata
           config_display: large
+          config_order: activity, repositories, community, metadata
           config_animate: yes
-          config_animation_duration: 0.5
-          config_title: |
-            <svg>...</svg> Shubham Singh • Full Stack Developer
-          config_description: |
-            Passionate about AI/ML • Open Source Contributor • Building Scalable Solutions
-          config_order: activity, community, repositories, metadata, coding-habits, achievements
-          config_padding: 20, 30
-          config_twemoji: yes
-          config_locale: en-IN  # Indian locale formatting
           
-          # 🎨 THEME & STYLING
-          config_background: gradient
-          config_background_color: "0D1117,161B22"  # GitHub dark gradient
-          config_border: yes
-          config_border_color: "30363D"
-          config_border_radius: 15
-          config_shadow: yes
-
-          # ---------------------
-          # 🧠 SMART PLUGIN LOADING
-          # ---------------------
-          
-          # 🏆 ACHIEVEMENTS (Enhanced)
+          # 🏆 ACHIEVEMENTS
           plugin_achievements: yes
           plugin_achievements_display: compact
-          plugin_achievements_types: pull_request,issue,repository,security,sponsor
-          plugin_achievements_limit: 8
-          plugin_achievements_threshold: B
-          plugin_achievements_ignored: "spam,duplicate"
+          plugin_achievements_limit: 6
           
-          # 🌐 LANGUAGES (Interactive)
+          # 🌐 LANGUAGES
           plugin_languages: yes
-          plugin_languages_colors: github
           plugin_languages_limit: 8
-          plugin_languages_analysis_timeout: 30
-          plugin_languages_categories: programming
-          plugin_languages_other: yes
           plugin_languages_details: percentage
-          plugin_languages_analysis: advanced
-          plugin_languages_recent_categories: programming,markup
-          plugin_languages_recent_days: 30
+          plugin_languages_colors: github
           
-          # 📅 ACTIVITY ANALYTICS
-          plugin_activity: yes
-          plugin_activity_limit: 12
-          plugin_activity_days: 21
-          plugin_activity_filter: all
-          plugin_activity_visibility: all
-          plugin_activity_timestamps: yes
-          plugin_activity_load: 300
-          
-          # 🔥 STREAKS (Gamified)
+          # 🔥 STREAKS
           plugin_streak: yes
           plugin_streak_days: 365
-          plugin_streak_theme: github-dark
-          plugin_streak_contributions: yes
-          plugin_streak_longest: yes
-          plugin_streak_current: yes
-          plugin_streak_description: "Consistency is key!"
           
-          # 🏅 TROPHIES (Customized)
+          # 📅 ACTIVITY
+          plugin_activity: yes
+          plugin_activity_limit: 8
+          plugin_activity_days: 14
+          
+          # 🏅 TROPHIES
           plugin_trophy: yes
-          plugin_trophy_title: "🏆 GitHub Trophies"
-          plugin_trophy_rank: SSS
-          plugin_trophy_progress: yes
-          plugin_trophy_theme: onedark
-          plugin_trophy_details: yes
-          plugin_trophy_column: 3
-          plugin_trophy_filter: "all"
+          plugin_trophy_rank: SS
           
-          # 📊 CONTRIBUTION GRAPH
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          plugin_isocalendar_theme: github-dark
-          plugin_isocalendar_animation: yes
+          # 📊 REPOSITORIES
+          plugin_repositories: yes
+          plugin_repositories_limit: 6
+          plugin_repositories_sort: stars
           
-          # 🕒 CODING HABITS (Advanced)
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_from: 200
-          plugin_habits_charts: yes
-          plugin_habits_days: 21
-          plugin_habits_trim: yes
-          
-          # 🧑‍💻 WAKATIME (Detailed)
-          plugin_wakatime: ${{ github.event_name == 'workflow_dispatch' && inputs.refresh_all == 'true' || false }}
-          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-          plugin_wakatime_days: 14
-          plugin_wakatime_limit: 8
-          plugin_wakatime_url: https://wakatime.com/@Shubham-cyber-prog
-          plugin_wakatime_sections: time,projects,languages,editors,os,best_day
-          plugin_wakatime_goal: 20  # hours/week goal
-          
-          # 🧠 LEETCODE (Enhanced)
+          # 🧠 LEETCODE
           plugin_leetcode: yes
           plugin_leetcode_user: SubhamN2006
-          plugin_leetcode_sections: solved,skills,contests,recent,calendar
-          plugin_leetcode_limit_recent: 10
-          plugin_leetcode_limit_skills: 12
-          plugin_leetcode_theme: dark
-          plugin_leetcode_display: compact
+          plugin_leetcode_sections: solved, recent
           
-          # 🌟 TOP REPOSITORIES
-          plugin_repositories: yes
-          plugin_repositories_affiliations: owner,collaborator,organization_member
-          plugin_repositories_features: stars, forks, languages
-          plugin_repositories_limit: 8
-          plugin_repositories_sort: stars
-          plugin_repositories_description: yes
+          # ⭐ STARS & FOLLOWERS
+          plugin_stars: yes
+          plugin_followup: yes
           
-          # 📌 PINNED REPOSITORIES
+          # 📈 TRAFFIC (Optional - requires repo admin)
+          plugin_traffic: ${{ github.event_name == 'workflow_dispatch' }}
+          
+          # 🕒 WAKATIME (Conditional)
+          plugin_wakatime: ${{ github.event.inputs.force_refresh == 'true' && secrets.WAKATIME_API_KEY != '' }}
+          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+          plugin_wakatime_days: 7
+          
+          # 📌 PINS
           plugin_pin: yes
-          plugin_pin_limit: 6
-          plugin_pin_chapters: yes
-          plugin_pin_repositories: Shubham-cyber-prog/portfolio,Shubham-cyber-prog/ai-projects
+          plugin_pin_limit: 4
           
           # 🏢 ORGANIZATIONS
           plugin_organizations: yes
-          plugin_organizations_limit: 9
-          plugin_organizations_avatars: yes
-          plugin_organizations_description: yes
           
-          # ⭐ STARGAZERS
-          plugin_stargazers: ${{ github.event_name == 'workflow_dispatch' }}
-          plugin_stargazers_limit: 16
-          plugin_stargazers_locale: yes
-          plugin_stargazers_sponsors: yes
+          # 🎨 STYLING
+          config_title: "🚀 Shubham's GitHub Stats"
+          config_twemoji: yes
+          config_background_color: "0D1117"
+          config_border_radius: 15
           
-          # 📈 TRAFFIC ANALYTICS
-          plugin_traffic: yes
-          plugin_traffic_days: 14
-          plugin_traffic_mode: detailed
-          plugin_traffic_repositories: all
+      # ✅ REMOVED Image Optimization Step (Not needed)
+      # It was causing error and only works on PRs
+      
+      - name: Verify Output
+        run: |
+          echo "✅ Metrics generated successfully!"
+          echo "Generated at: $(date)"
+          echo "Workflow: ${{ github.event_name }}"
           
-          # 🎯 TOPICS
-          plugin_topics: yes
-          plugin_topics_mode: mastered
-          plugin_topics_limit: 12
-          plugin_topics_sort: stars
-          plugin_topics_progress: yes
-          
-          # 🛠️ TECHNICAL INSIGHTS
-          plugin_lines: yes
-          plugin_lines_recent: yes
-          plugin_lines_sloc: yes
-          
-          # 🏗️ PAGES SPEED
-          plugin_pages: yes
-          plugin_pages_lighthouse: yes
-          plugin_pages_url: https://shubham-singh.vercel.app
-          
-          # 🔄 DYNAMIC UPDATES
-          plugin_followup: yes
-          plugin_followup_limit: 8
-          plugin_contributions: yes
-          plugin_contributions_days: 365
-          plugin_contributions_animation: yes
-          
-          # 📱 SOCIAL PROOF
-          plugin_people: yes
-          plugin_people_types: followers,following
-          plugin_people_limit: 12
-          
-          # 🎨 ICONS & BADGES
-          plugin_icons: yes
-          plugin_icons_per_row: 10
-          plugin_icons_size: 28
-          plugin_icons_color: github
-          plugin_icons_animation: hover
-
-      # 🚀 POST-PROCESSING STEP (Optional)
-      - name: Optimize Image
-        if: always()
-        uses: calibreapp/image-actions@main
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          
-      # 📊 ANALYTICS TRACKING
-      - name: Track Metrics Run
+      # 📤 Auto-commit changes (Optional)
+      - name: Commit Metrics
         if: success()
         run: |
-          echo "Metrics generated at $(date)" >> .github/metrics.log
-          echo "Duration: ${{ job.status }}" >> .github/metrics.log
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add --all
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Updated GitHub metrics [skip ci]"
+            git push
+          fi
           
-      # 🚨 NOTIFICATIONS
+      # 🚨 Failure Notification
       - name: Notify on Failure
         if: failure()
         uses: actions/github-script@v6
         with:
           script: |
-            github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: '⚠️ GitHub Metrics Failed',
-              body: `Workflow failed at ${new Date().toISOString()}`
-            })
+            console.log('Workflow failed - check Actions tab');
