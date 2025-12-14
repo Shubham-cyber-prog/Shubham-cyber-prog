@@ -130,4 +130,4 @@ jobs:
           plugin_activity_limit: 10
           plugin_activity_days: 14
           plugin_activity_filter: all
-          plugin_activity_visibility: public isko thoda sirf thoda acha krna follower ka acha krna or lkeetcode ka acha krna
+          plugin_activity_visibility: public 
