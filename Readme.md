@@ -126,6 +126,7 @@
   </a>
 </p>
 
+
 <h2 align="center">📊 GitHub Summary</h2>
 
 <p align="center">
@@ -133,6 +134,7 @@
    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=2077" alt="GitHub Stats" />
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shubham-cyber-prog&theme=2077" alt="Most Commit Language" />
 </p>
+
   
 <h2 align="center">⚡ More About Me ⚡</h2>
 <div align="center" style="font-size: 16px; line-height: 1.8;">
@@ -309,8 +311,14 @@ Ruby                     1 repo              █░░░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/Shubham-cyber-prog/Shubham-cyber-prog/main/assets/bar_graph.png)
 
 <!--END_SECTION:waka-->
+<!--Wakatime stats-->
+<!-- <a href="https://wakatime.com"><img src="https://wakatime.com/share/@SubhamN2006/a9962278-0265-4b5e-94a8-1e310fabea91.png" /></a> -->
 
-![WakaTime Stats](<a href="https://wakatime.com"><img src="https://wakatime.com/share/@SubhamN2006/a9962278-0265-4b5e-94a8-1e310fabea91.png" /></a>)
+<p align="center" style="background-color: #000; padding: 10px;">
+  <a href="https://wakatime.com">
+    <img src="https://wakatime.com/share/@SubhamN2006/a9962278-0265-4b5e-94a8-1e310fabea91.png" alt="WakaTime Stats"/>
+  </a>
+</p>
 
 
 <p align="center">
@@ -326,7 +334,8 @@ Ruby                     1 repo              █░░░░░░░░░░�
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=130&section=footer&animation=fadeIn)
 
 <div align="center">
-    <a href="#">
-        <img alt="thanks for visiting!" src="https://readme-typing-svg.herokuapp.com?font=Righteous&color=34F700&&size=26&&duration=2600&center=true&vCenter=true&width=300&lines=Thanks+for+visiting!;Have+a+great+day,+Coder!">
+  <a href="#">
+  <img alt="Thanks for visiting!" 
+       src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=28&duration=2500&color=00FFAA&center=true&vCenter=true&width=400&lines=Thanks+for+visiting!;Have+a+great+day,+Coder!">
     </a>
 </div>
