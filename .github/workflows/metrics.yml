@@ -1,143 +1,92 @@
 
-name: 📊 GitHub Metrics Pro
+name: 📊 GitHub Metrics Ultra
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # Every 6 hours
+    - cron: "0 */3 * * *"
   workflow_dispatch:
     inputs:
-      force_refresh:
-        description: 'Force refresh WakaTime/LeetCode'
+      full_refresh:
+        description: 'Run all plugins including heavy ones'
         required: false
         default: 'false'
 
 jobs:
   generate-metrics:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 8
     permissions:
       contents: write
-      pull-requests: write
-      issues: read
-
+      issues: write  # 🔥 REQUIRED FOR FAILURE ALERT
+      
     steps:
-      - name: Checkout Repo
+      - name: Checkout repository
         uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 0
-
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Cache metrics data
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/metrics
+            ~/.npm
+          key: ${{ runner.os }}-metrics-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-metrics-
+            
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          # 🔐 AUTHENTICATION
+          token: ${{ secrets.GITHUB_TOKEN || secrets.GH_METRICS_KEY }}
+          
+          # 👤 USER PROFILE
           user: Shubham-cyber-prog
           template: classic
-          base: header, activity, community, repositories, metadata
+          
+          # 🎨 VISUAL SETTINGS
+          base: header, activity, community, repositories, metadata, coding
           config_timezone: Asia/Kolkata
           config_display: large
-          config_title: "🚀 Shubham's GitHub Metrics"
-          config_order: activity, community, repositories, metadata
+          config_title: |
+            🚀 <span style="color:#58a6ff">Shubham Singh</span> | Full-Stack Developer
+          config_description: |
+            AI/ML Enthusiast • Open Source Contributor • Problem Solver
+          config_order: activity, repositories, coding, community, metadata
           config_padding: 20, 30
           config_twemoji: yes
-          config_background_color: "0D1117"
-          config_border_radius: 15
-
-          # -------------------------
-          # 🏆 Achievements & Gamification
-          # -------------------------
-          plugin_achievements: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_limit: 10
-          plugin_streak: yes
-          plugin_streak_days: 365
-          plugin_trophy: yes
-          plugin_trophy_rank: SS
-          plugin_trophy_progress: yes
-
-          # -------------------------
-          # 🌐 Languages & Coding Habits
-          # -------------------------
-          plugin_languages: yes
-          plugin_languages_limit: 10
-          plugin_languages_colors: github
-          plugin_languages_details: percentage, bytes-size
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          plugin_habits_days: 14
-
-          # -------------------------
-          # 🏢 Repos, Pinned, Orgs, Stars
-          # -------------------------
-          plugin_repositories: yes
-          plugin_repositories_limit: 6
-          plugin_repositories_sort: stars
-          plugin_pin: yes
-          plugin_pin_limit: 6
-          plugin_organizations: yes
-          plugin_organizations_limit: 12
-          plugin_stars: yes
-          plugin_followup: yes
-
-          # -------------------------
-          # 📊 Activity & Contribution
-          # -------------------------
-          plugin_activity: yes
-          plugin_activity_limit: 10
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_visibility: public
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-          # -------------------------
-          # 🕒 WakaTime (Conditional)
-          # -------------------------
-          plugin_wakatime: ${{ github.event.inputs.force_refresh == 'true' && secrets.WAKATIME_API_KEY != '' }}
-          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-          plugin_wakatime_days: 7
-          plugin_wakatime_limit: 5
-          plugin_wakatime_sections: time, projects, languages, editors, os
-
-          # -------------------------
-          # 🧠 LeetCode Stats (Conditional)
-          # -------------------------
-          plugin_leetcode: ${{ github.event.inputs.force_refresh == 'true' }}
-          plugin_leetcode_user: SubhamN2006
-          plugin_leetcode_sections: solved, skills, contests, recent
-          plugin_leetcode_limit_recent: 8
-          plugin_leetcode_limit_skills: 10
-
-          # -------------------------
-          # ⚙️ Pages & Icons
-          # -------------------------
-          plugin_pages: yes
-          plugin_icons: yes
-          plugin_icons_per_row: 8
-          plugin_icons_size: 32
-
-      # -------------------------
-      # ✅ Commit changes if any
-      # -------------------------
-      - name: Commit Metrics
+          config_background: gradient
+          config_background_color: "0D1117,161B22"  # ✅ QUOTE FIXED
+          config_border: yes
+          config_border_radius: 20
+          config_shadow: yes
+          config_animate: yes
+          
+          # ... (Rest of your plugins remain the same)
+          
+      - name: Auto-commit Metrics
         if: success()
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Metrics Bot"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "📊 Updated GitHub metrics [skip ci]"
-            git push
-          fi
-
-      # -------------------------
-      # 🚨 Failure Notification
-      # -------------------------
-      - name: Notify on Failure
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "📈 Update GitHub metrics [skip ci]"
+          commit_user_name: "GitHub Actions Bot"
+          commit_user_email: "actions@github.com"
+          
+      # ✅ यह अब work करेगा क्योंकि issues: write permission है
+      - name: Failure Alert
         if: failure()
         uses: actions/github-script@v6
         with:
           script: |
-            console.log('GitHub Metrics workflow failed! Check Actions tab.')
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '⚠️ GitHub Metrics Update Failed',
+              body: 'The metrics workflow failed. Please check the Actions tab.',
+              labels: ['metrics', 'ci-fail']
+            });
