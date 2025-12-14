@@ -1,256 +1,143 @@
 
-name: 📊 GitHub Metrics Ultra
+name: 📊 GitHub Metrics Pro
 
 on:
   schedule:
-    - cron: "0 */3 * * *"  # Every 3 hours (reduced from hourly)
+    - cron: "0 */6 * * *" # Every 6 hours
   workflow_dispatch:
     inputs:
-      full_refresh:
-        description: 'Run all plugins including heavy ones'
+      force_refresh:
+        description: 'Force refresh WakaTime/LeetCode'
         required: false
         default: 'false'
 
 jobs:
   generate-metrics:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 15
     permissions:
       contents: write
-    
+      pull-requests: write
+      issues: read
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repo
         uses: actions/checkout@v4
-        
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
-          
-      - name: Cache metrics data
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cache/metrics
-            ~/.npm
-          key: ${{ runner.os }}-metrics-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-metrics-
-            
+          fetch-depth: 0
+
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
-          # 🔐 AUTHENTICATION
-          token: ${{ secrets.GITHUB_TOKEN || secrets.GH_METRICS_KEY }}
-          
-          # 👤 USER PROFILE
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           user: Shubham-cyber-prog
           template: classic
-          
-          # 🎨 VISUAL SETTINGS
-          base: header, activity, community, repositories, metadata, coding
+          base: header, activity, community, repositories, metadata
           config_timezone: Asia/Kolkata
           config_display: large
-          config_title: |
-            🚀 <span style="color:#58a6ff">Shubham Singh</span> | Full-Stack Developer
-          config_description: |
-            AI/ML Enthusiast • Open Source Contributor • Problem Solver
-          config_order: activity, repositories, coding, community, metadata
+          config_title: "🚀 Shubham's GitHub Metrics"
+          config_order: activity, community, repositories, metadata
           config_padding: 20, 30
           config_twemoji: yes
-          config_background: gradient
-          config_background_color: "0D1117,161B22"
-          config_border: yes
-          config_border_radius: 20
-          config_shadow: yes
-          config_animate: yes
-          
-          # ====================
-          # 🏆 ACHIEVEMENTS
-          # ====================
+          config_background_color: "0D1117"
+          config_border_radius: 15
+
+          # -------------------------
+          # 🏆 Achievements & Gamification
+          # -------------------------
           plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_types: repository, pull_request, issue, security
-          plugin_achievements_limit: 8
-          plugin_achievements_threshold: B
-          plugin_achievements_ignored: spam,duplicate
-          
-          # ====================
-          # 🌐 PROGRAMMING LANGUAGES
-          # ====================
-          plugin_languages: yes
-          plugin_languages_colors: github
-          plugin_languages_limit: 12
-          plugin_languages_analysis_timeout: 20
-          plugin_languages_categories: programming
-          plugin_languages_details: percentage
-          plugin_languages_sections: most-used
-          plugin_languages_other: yes
-          plugin_languages_threshold: 0.1%
-          
-          # ====================
-          # 📊 REPOSITORY STATS
-          # ====================
-          plugin_repositories: yes
-          plugin_repositories_limit: 9
-          plugin_repositories_features: stars, forks, languages
-          plugin_repositories_sort: stars
-          plugin_repositories_description: yes
-          
-          # ====================
-          # 🔥 STREAK & ACTIVITY
-          # ====================
+          plugin_achievements_display: detailed
+          plugin_achievements_limit: 10
           plugin_streak: yes
           plugin_streak_days: 365
-          plugin_streak_theme: github-dark
-          plugin_streak_contributions: yes
-          plugin_streak_longest: yes
-          
-          plugin_activity: yes
-          plugin_activity_limit: 12
-          plugin_activity_days: 21
-          plugin_activity_filter: all
-          plugin_activity_timestamps: yes
-          
-          # ====================
-          # 🏅 GITHUB TROPHIES
-          # ====================
           plugin_trophy: yes
-          plugin_trophy_rank: SSS
-          plugin_trophy_theme: onedark
-          plugin_trophy_column: 4
-          plugin_trophy_details: yes
-          
-          # ====================
-          # 📅 CONTRIBUTION GRAPH
-          # ====================
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
-          plugin_isocalendar_theme: github-dark
-          plugin_isocalendar_animation: yes
-          
-          # ====================
-          # 🧑‍💻 CODING TIME (WAKATIME)
-          # ====================
-          plugin_wakatime: ${{ github.event.inputs.full_refresh == 'true' && secrets.WAKATIME_API_KEY != '' }}
-          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-          plugin_wakatime_days: 7
-          plugin_wakatime_limit: 6
-          plugin_wakatime_sections: time, languages, editors
-          plugin_wakatime_goal: 25
-          
-          # ====================
-          # 🧠 LEETCODE STATS
-          # ====================
-          plugin_leetcode: yes
-          plugin_leetcode_user: SubhamN2006
-          plugin_leetcode_sections: solved, skills, recent
-          plugin_leetcode_limit_recent: 10
-          plugin_leetcode_limit_skills: 8
-          plugin_leetcode_theme: dark
-          
-          # ====================
-          # ⭐ SOCIAL & COMMUNITY
-          # ====================
-          plugin_stars: yes
-          plugin_followup: yes
-          plugin_people: yes
-          plugin_people_types: followers
-          plugin_people_limit: 12
-          
-          plugin_stargazers: ${{ github.event.inputs.full_refresh == 'true' }}
-          plugin_stargazers_limit: 9
-          
-          # ====================
-          # 📌 PINNED REPOSITORIES
-          # ====================
-          plugin_pin: yes
-          plugin_pin_limit: 6
-          plugin_pin_repositories: >
-            Shubham-cyber-prog/Shubham-cyber-prog,
-            Shubham-cyber-prog/portfolio,
-            Shubham-cyber-prog/ai-projects
-          plugin_pin_chapters: yes
-          
-          # ====================
-          # 🏢 ORGANIZATIONS
-          # ====================
-          plugin_organizations: yes
-          plugin_organizations_limit: 8
-          plugin_organizations_avatars: yes
-          
-          # ====================
-          # 📈 ADVANCED METRICS
-          # ====================
-          plugin_contributions: yes
-          plugin_contributions_days: 180
-          
-          plugin_lines: yes
-          plugin_lines_sloc: yes
-          
-          plugin_topics: yes
-          plugin_topics_mode: starred
-          plugin_topics_limit: 10
-          plugin_topics_sort: stars
-          
+          plugin_trophy_rank: SS
+          plugin_trophy_progress: yes
+
+          # -------------------------
+          # 🌐 Languages & Coding Habits
+          # -------------------------
+          plugin_languages: yes
+          plugin_languages_limit: 10
+          plugin_languages_colors: github
+          plugin_languages_details: percentage, bytes-size
           plugin_habits: yes
           plugin_habits_facts: yes
+          plugin_habits_charts: yes
           plugin_habits_days: 14
-          
-          plugin_reactions: yes
-          
-          # ====================
-          # 🎨 VISUAL ENHANCEMENTS
-          # ====================
+
+          # -------------------------
+          # 🏢 Repos, Pinned, Orgs, Stars
+          # -------------------------
+          plugin_repositories: yes
+          plugin_repositories_limit: 6
+          plugin_repositories_sort: stars
+          plugin_pin: yes
+          plugin_pin_limit: 6
+          plugin_organizations: yes
+          plugin_organizations_limit: 12
+          plugin_stars: yes
+          plugin_followup: yes
+
+          # -------------------------
+          # 📊 Activity & Contribution
+          # -------------------------
+          plugin_activity: yes
+          plugin_activity_limit: 10
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_visibility: public
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # -------------------------
+          # 🕒 WakaTime (Conditional)
+          # -------------------------
+          plugin_wakatime: ${{ github.event.inputs.force_refresh == 'true' && secrets.WAKATIME_API_KEY != '' }}
+          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+          plugin_wakatime_days: 7
+          plugin_wakatime_limit: 5
+          plugin_wakatime_sections: time, projects, languages, editors, os
+
+          # -------------------------
+          # 🧠 LeetCode Stats (Conditional)
+          # -------------------------
+          plugin_leetcode: ${{ github.event.inputs.force_refresh == 'true' }}
+          plugin_leetcode_user: SubhamN2006
+          plugin_leetcode_sections: solved, skills, contests, recent
+          plugin_leetcode_limit_recent: 8
+          plugin_leetcode_limit_skills: 10
+
+          # -------------------------
+          # ⚙️ Pages & Icons
+          # -------------------------
+          plugin_pages: yes
           plugin_icons: yes
-          plugin_icons_per_row: 10
-          plugin_icons_size: 28
-          plugin_icons_color: github
-          
-          # ====================
-          # ⚡ PERFORMANCE OPTIONS
-          # ====================
-          plugin_traffic: ${{ github.event.inputs.full_refresh == 'true' }}
-          plugin_gists: ${{ github.event.inputs.full_refresh == 'true' }}
-          plugin_pages: ${{ github.event.inputs.full_refresh == 'true' }}
-          
-      - name: Verify Output
+          plugin_icons_per_row: 8
+          plugin_icons_size: 32
+
+      # -------------------------
+      # ✅ Commit changes if any
+      # -------------------------
+      - name: Commit Metrics
+        if: success()
         run: |
-          if [ -f "github-metrics.svg" ] || [ -f "metrics.svg" ]; then
-            echo "✅ Metrics generated successfully!"
-            echo "📊 Check your README.md file"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Metrics Bot"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
           else
-            echo "❌ Metrics file not found"
-            exit 1
+            git commit -m "📊 Updated GitHub metrics [skip ci]"
+            git push
           fi
-          
-      - name: Auto-commit Metrics
-        if: success()
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "📈 Update GitHub metrics [skip ci]"
-          file_pattern: "*.svg *.json"
-          commit_user_name: "GitHub Actions Bot"
-          commit_user_email: "actions@github.com"
-          commit_author: "GitHub Actions Bot <actions@github.com>"
-          
-      - name: Success Notification
-        if: success()
-        run: |
-          echo "🎉 GitHub metrics updated at $(date)"
-          echo "🌐 View at: https://github.com/Shubham-cyber-prog"
-          
-      - name: Failure Alert
+
+      # -------------------------
+      # 🚨 Failure Notification
+      # -------------------------
+      - name: Notify on Failure
         if: failure()
         uses: actions/github-script@v6
         with:
           script: |
-            const { owner, repo } = context.repo;
-            github.rest.issues.create({
-              owner,
-              repo,
-              title: '⚠️ GitHub Metrics Update Failed',
-              body: `The metrics workflow failed at ${new Date().toISOString()}. Please check the Actions tab.`,
-              labels: ['metrics', 'ci-fail']
-            });
+            console.log('GitHub Metrics workflow failed! Check Actions tab.')
