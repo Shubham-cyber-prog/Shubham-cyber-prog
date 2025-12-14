@@ -1,142 +1,133 @@
-   name: 📊 GitHub Metrics Pro
+name: 📊 GitHub Metrics
+
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Every 6 hours (rate limit friendly)
+    - cron: "0 * * * *" # Runs every hour
   workflow_dispatch:
-    inputs:
-      force_refresh:
-        description: 'Force complete refresh'
-        required: false
-        default: 'false'
-
-# Cache settings for faster runs
-env:
-  CACHE_KEY: metrics-${{ github.sha }}
 
 jobs:
-  generate-metrics:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: write
-      pull-requests: write
-      issues: read
-    
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          
-      - name: Setup Cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.metrics
-          key: ${{ env.CACHE_KEY }}
-          
       - name: Generate GitHub Metrics
-        uses: lowlighter/metrics@v3.22
+        uses: lowlighter/metrics@latest
         with:
-          # 🔐 TOKEN CONFIGURATION (FIXED)
-          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-          
-          # 📍 USER & TEMPLATE
+          token: ${{ secrets.GH_METRICS_KEY }}
           user: Shubham-cyber-prog
           template: classic
-          
-          # 🎯 BASIC CONFIG
-          base: header, activity, community, repositories
+          base: header, activity, community, repositories, metadata
           config_timezone: Asia/Kolkata
           config_display: large
-          config_order: activity, repositories, community, metadata
-          config_animate: yes
-          
-          # 🏆 ACHIEVEMENTS
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_limit: 6
-          
-          # 🌐 LANGUAGES
-          plugin_languages: yes
-          plugin_languages_limit: 8
-          plugin_languages_details: percentage
-          plugin_languages_colors: github
-          
-          # 🔥 STREAKS
-          plugin_streak: yes
-          plugin_streak_days: 365
-          
-          # 📅 ACTIVITY
-          plugin_activity: yes
-          plugin_activity_limit: 8
-          plugin_activity_days: 14
-          
-          # 🏅 TROPHIES
-          plugin_trophy: yes
-          plugin_trophy_rank: SS
-          
-          # 📊 REPOSITORIES
+          config_title: "💫 Shubham's GitHub Metrics"
+          config_order: activity, community, repositories, metadata
+          config_padding: 15, 25
+          config_twemoji: yes
+
+          # ---------------------
+          # 🧠 GENERAL STATS
+          # ---------------------
+          plugin_lines: yes
+          plugin_traffic: yes
           plugin_repositories: yes
-          plugin_repositories_limit: 6
-          plugin_repositories_sort: stars
-          
-          # 🧠 LEETCODE
-          plugin_leetcode: yes
-          plugin_leetcode_user: SubhamN2006
-          plugin_leetcode_sections: solved, recent
-          
-          # ⭐ STARS & FOLLOWERS
           plugin_stars: yes
           plugin_followup: yes
-          
-          # 📈 TRAFFIC (Optional - requires repo admin)
-          plugin_traffic: ${{ github.event_name == 'workflow_dispatch' }}
-          
-          # 🕒 WAKATIME (Conditional)
-          plugin_wakatime: ${{ github.event.inputs.force_refresh == 'true' && secrets.WAKATIME_API_KEY != '' }}
+          plugin_gists: yes
+          plugin_people: yes
+          plugin_contributions: yes
+          plugin_reactions: yes
+
+          # ---------------------
+          # 🏆 ACHIEVEMENTS
+          # ---------------------
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_threshold: C
+          plugin_achievements_secrets: no
+          plugin_achievements_limit: 10
+
+          # ---------------------
+          # 🌐 LANGUAGES
+          # ---------------------
+          plugin_languages: yes
+          plugin_languages_colors: github
+          plugin_languages_limit: 10
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_details: percentage, bytes-size
+          plugin_languages_threshold: 0.5%
+          plugin_languages_categories: programming, markup, data
+
+          # ---------------------
+          # 🕒 CODING HABITS
+          # ---------------------
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_days: 14
+
+          # ---------------------
+          # 🔥 STREAKS & TROPHIES
+          # ---------------------
+          plugin_streak: yes
+          plugin_streak_days: 365
+          plugin_trophy: yes
+          plugin_trophy_rank: SS
+          plugin_trophy_progress: yes
+
+          # ---------------------
+          # 🧩 CONTRIBUTION CALENDAR
+          # ---------------------
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # ---------------------
+          # 🧑‍💻 WAKATIME (Coding Time)
+          # ---------------------
+          plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
           plugin_wakatime_days: 7
-          
-          # 📌 PINS
-          plugin_pin: yes
-          plugin_pin_limit: 4
-          
-          # 🏢 ORGANIZATIONS
+          plugin_wakatime_limit: 5
+          plugin_wakatime_sections: time, projects, languages, editors, os
+
+          # ---------------------
+          # 🧠 LEETCODE STATS
+          # ---------------------
+          plugin_leetcode: yes
+          plugin_leetcode_user: SubhamN2006
+          plugin_leetcode_sections: solved, skills, contests, recent
+          plugin_leetcode_limit_recent: 8
+          plugin_leetcode_limit_skills: 10
+
+          # ---------------------
+          # 🌟 TOPICS & ORGS
+          # ---------------------
+          plugin_topics: yes
+          plugin_topics_mode: starred
+          plugin_topics_sort: stars
+          plugin_topics_limit: 15
           plugin_organizations: yes
-          
-          # 🎨 STYLING
-          config_title: "🚀 Shubham's GitHub Stats"
-          config_twemoji: yes
-          config_background_color: "0D1117"
-          config_border_radius: 15
-          
-      # ✅ REMOVED Image Optimization Step (Not needed)
-      # It was causing error and only works on PRs
-      
-      - name: Verify Output
-        run: |
-          echo "✅ Metrics generated successfully!"
-          echo "Generated at: $(date)"
-          echo "Workflow: ${{ github.event_name }}"
-          
-      # 📤 Auto-commit changes (Optional)
-      - name: Commit Metrics
-        if: success()
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add --all
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "📊 Updated GitHub metrics [skip ci]"
-            git push
-          fi
-          
-      # 🚨 Failure Notification
-      - name: Notify on Failure
-        if: failure()
-        uses: actions/github-script@v6
-        with:
-          script: |
-            console.log('Workflow failed - check Actions tab');
+          plugin_organizations_limit: 12
+
+          # ---------------------
+          # 🧮 STARGAZERS + PINS
+          # ---------------------
+          plugin_stargazers: yes
+          plugin_stargazers_limit: 12
+          plugin_pin: yes
+          plugin_pin_limit: 6
+
+          # ---------------------
+          # ⚙️ PAGE BUILD + ICONS
+          # ---------------------
+          plugin_pages: yes
+          plugin_icons: yes
+          plugin_icons_per_row: 8
+          plugin_icons_size: 32
+
+          # ---------------------
+          # 📊 ACTIVITY LOG
+          # ---------------------
+          plugin_activity: yes
+          plugin_activity_limit: 10
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_visibility: public
