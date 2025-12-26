@@ -1,6 +1,3 @@
-
-![header](https://user-images.githubusercontent.com/73928744/182041587-527d010a-80d3-4b57-bd99-c2be13c1a516.png)
-
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=270&section=header&text=Subham%20Nayak&fontSize=70&fontAlignY=35&desc=FullStack%20Developer%20%7C%20CS%20Student&descAlignY=60&descSize=20&animation=fadeIn&fontColor=ffffff)
 
 <!-- Centered Typing Text -->
@@ -309,7 +306,7 @@ Ruby                     1 repo              █░░░░░░░░░░�
 
 <!-- Cyan Wave Footer - shorter height -->
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=130&section=footer&animation=fadeIn)
-
+![header](https://user-images.githubusercontent.com/73928744/182041587-527d010a-80d3-4b57-bd99-c2be13c1a516.png)
 <div align="center">
   <a href="#">
   <img alt="Thanks for visiting!" 
