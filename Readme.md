@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=270&section=header&text=Subham%20Nayak&fontSize=70&fontAlignY=35&desc=FullStack%20Developer%20%7C%20CS%20Student&descAlignY=60&descSize=20&animation=fadeIn&fontColor=ffffff)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=280&section=header&text=Subham%20Nayak&fontSize=70&fontAlignY=35&desc=FullStack%20Developer%20%7C%20CS%20Student&descAlignY=62&descSize=20&animation=twinkling&fontColor=ffffff&stroke=00CED1&strokeWidth=2)
 
 <!-- Centered Typing Text -->
 <p align="center">
