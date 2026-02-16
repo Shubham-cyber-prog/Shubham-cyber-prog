@@ -298,7 +298,8 @@ Ruby                     1 repo              █░░░░░░░░░░�
 </p>
 
 
-![Metrics](https://raw.githubusercontent.com/shubham-cyber-prog/shubham-cyber-prog/main/github-metrics.svg)
+![Metrics]( https://github.com/Shubham-cyber-prog/Shubham-cyber-prog/blob/main/metrics.svg)
+    
 
 ## 🤝 Connect With Me
 
