@@ -26,7 +26,7 @@
 
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
-<img src="https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=radical&no-frame=true&column=7" alt="GitHub Trophies"/>
+
 
 
 <p align="center">
@@ -301,6 +301,19 @@ Ruby                     1 repo              █░░░░░░░░░░�
 
 ![Metrics](https://raw.githubusercontent.com/shubham-cyber-prog/shubham-cyber-prog/main/github-metrics.svg)
 
+## 🤝 Connect With Me
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Shubham-cyber-prog)
+[![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/SubhamN2006/)
+[![Medium](https://img.shields.io/badge/-Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@sn343555)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subhamnayak/)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sn343555@gmail.com)
+
+</div>
+
+---
 
 <!-- Cyan Wave Footer - shorter height -->
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=130&section=footer&animation=fadeIn)
