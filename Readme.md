@@ -38,7 +38,7 @@
   <img height="170" width="160" src="right.webp" />
 </p>
 
-<h3 align="center">Connect with Me</h3>
+<!-- <h3 align="center">Connect with Me</h3>
 <p align="center">
   <a href="https://linkedin.com/in/subham-nayak-00276930b" target="_blank">
     <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
@@ -58,7 +58,7 @@
   <a href="https://auth.geeksforgeeks.org/user/sn343b2w0" target="_blank">
     <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="GeeksforGeeks" height="30" width="40" />
   </a>
-</p>
+</p> -->
 
 
  <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="30"> Tech Stack & Tools
