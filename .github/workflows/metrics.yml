@@ -3,7 +3,7 @@ name: GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # Runs every 12 hours
+    - cron: "0 */6 * * *"  # Every 6 hours
   workflow_dispatch:
   push:
     branches:
@@ -12,164 +12,136 @@ on:
 
 jobs:
   # ============================================
-  # Main Metrics with Enhanced Features
+  # 🎯 MAIN METRICS - Complete Overview
   # ============================================
-  github-metrics:
+  github-metrics-main:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Generate GitHub Metrics
+      - name: Main Metrics
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: Shubham-cyber-prog
           
-          # Base configuration
+          # Base Configuration - All sections enabled
           base: header, activity, community, repositories, metadata
           base_indepth: yes
           
-          # Plugin configurations
+          # Introduction Plugin
           plugin_introduction: yes
           plugin_introduction_title: yes
           
-          # Calendar plugin
+          # Calendar/Isocalendar Plugin
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # Lines of code plugin
+          # Lines of Code Plugin
           plugin_lines: yes
-          plugin_lines_history_limit: 1
-          plugin_lines_repositories_limit: 4
           plugin_lines_sections: base
+          plugin_lines_repositories_limit: 4
           
-          # Topics plugin
+          # Topics Plugin
           plugin_topics: yes
           plugin_topics_mode: starred
           plugin_topics_sort: stars
-          plugin_topics_limit: 15
+          plugin_topics_limit: 20
           
-          # Habits plugin
+          # Habits Plugin
           plugin_habits: yes
-          plugin_habits_from: 400
-          plugin_habits_days: 30
+          plugin_habits_from: 200
+          plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
           plugin_habits_trim: yes
           
-          # Stars plugin
+          # Stars Plugin
           plugin_stars: yes
-          plugin_stars_limit: 6
+          plugin_stars_limit: 4
           
-          # People plugin - FIXED for better follower display
+          # People Plugin - Optimized
           plugin_people: yes
           plugin_people_types: followers, following
-          plugin_people_limit: 500
-          plugin_people_size: 32
-          plugin_people_identicons: yes
-          plugin_people_thanks: yes
-          plugin_people_sponsors_custom: yes
+          plugin_people_limit: 24
+          plugin_people_size: 28
           plugin_people_shuffle: yes
           
-          # Reactions plugin
+          # Reactions Plugin
           plugin_reactions: yes
-          plugin_reactions_limit: 300
-          plugin_reactions_days: 30
+          plugin_reactions_limit: 200
+          plugin_reactions_days: 14
           plugin_reactions_display: absolute
           plugin_reactions_details: percentage
           
-          # Achievements plugin
+          # Achievements Plugin
           plugin_achievements: yes
-          plugin_achievements_threshold: B
+          plugin_achievements_threshold: C
           plugin_achievements_secrets: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_limit: 10
+          plugin_achievements_display: compact
+          plugin_achievements_limit: 8
           
-          # Notable contributions
+          # Notable Contributions Plugin
           plugin_notable: yes
           plugin_notable_from: organization
           plugin_notable_repositories: yes
           plugin_notable_indepth: yes
           
-          # Fortune plugin
+          # Fortune Plugin
           plugin_fortune: yes
           
-          # Sponsors plugin
-          plugin_sponsors: yes
-          plugin_sponsors_sections: goal, list, about
-          
-          # Traffic plugin
+          # Traffic Plugin
           plugin_traffic: yes
-          
-          # Skyline plugin
-          plugin_skyline: yes
-          plugin_skyline_year: 2024
-          plugin_skyline_frames: 60
-          plugin_skyline_quality: 0.5
           
           # Configuration
           config_timezone: Asia/Kolkata
-          config_octicon: yes
           config_display: large
           config_animated: yes
+          config_order: base.header, base.activity+community, base.repositories, isocalendar, languages, notable, discussions, topics, stars, licenses, habits, contributors, followup, lines, traffic, pagespeed, tweets, posts
           repositories_forks: yes
-          commits_authoring: Shubham-cyber-prog
+          repositories_affiliations: owner, collaborator, organization_member
 
   # ============================================
-  # Detailed Personal Metrics
+  # 📊 DETAILED METRICS - Languages, Skills, Posts
   # ============================================
-  github-metrics-detailed-personal:
+  github-metrics-detailed:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Personal Metrics (Detailed)
+      - name: Detailed Metrics
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.detailed.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: Shubham-cyber-prog
           
-          # Base metadata
-          base: header, metadata
-          base_indepth: yes
+          base: metadata
           
-          # Gists plugin
+          # Languages Plugin - Full Details
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_details: bytes-size, percentage, lines
+          plugin_languages_limit: 12
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_colors: rainbow
+          plugin_languages_threshold: 0%
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 30
+          plugin_languages_recent_load: 500
+          plugin_languages_analysis_timeout: 60
+          
+          # Gists Plugin
           plugin_gists: yes
           
-          # PageSpeed plugin
-          plugin_pagespeed: yes
-          plugin_pagespeed_detailed: yes
-          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-          plugin_pagespeed_screenshot: yes
-          plugin_pagespeed_pwa: yes
-          plugin_pagespeed_url: .user.website
-          
-          # Follow-up plugin
+          # Follow-up Plugin
           plugin_followup: yes
           plugin_followup_sections: repositories, user
           plugin_followup_indepth: yes
           plugin_followup_archived: yes
           
-          # Languages plugin
-          plugin_languages: yes
-          plugin_languages_analysis_timeout: 60
-          plugin_languages_categories: markup, programming, data
-          plugin_languages_colors: rainbow
-          plugin_languages_details: bytes-size, percentage, lines
-          plugin_languages_limit: 12
-          plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 30
-          plugin_languages_recent_load: 500
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_threshold: 0%
-          plugin_languages_indepth: yes
-          
-          # Posts plugin (Dev.to)
+          # Dev.to Posts Plugin
           plugin_posts: yes
           plugin_posts_source: dev.to
           plugin_posts_limit: 4
@@ -177,88 +149,230 @@ jobs:
           plugin_posts_covers: yes
           plugin_posts_user: Shubham-cyber-prog
           
-          # LeetCode plugin
+          # LeetCode Plugin
           plugin_leetcode: yes
           plugin_leetcode_sections: solved, skills, recent
           plugin_leetcode_user: Shubham-cyber-prog
           plugin_leetcode_limit_skills: 10
-          plugin_leetcode_limit_recent: 5
+          plugin_leetcode_limit_recent: 10
+          
+          # Discussions Plugin
+          plugin_discussions: yes
+          plugin_discussions_categories: yes
+          plugin_discussions_categories_limit: 8
+          
+          # Stackoverflow Plugin (Optional - add your ID)
+          # plugin_stackoverflow: yes
+          # plugin_stackoverflow_user: YOUR_STACKOVERFLOW_ID
+          # plugin_stackoverflow_sections: answers-top, questions-recent
+          # plugin_stackoverflow_limit: 5
           
           # Configuration
           config_timezone: Asia/Kolkata
-          config_octicon: yes
           config_display: large
-          config_animated: yes
+          config_padding: 6%, 10%
 
   # ============================================
-  # Activity Metrics
+  # 👥 PEOPLE METRICS - All Followers & Following
+  # ============================================
+  github-metrics-people:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: People & Community
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.people.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Shubham-cyber-prog
+          
+          base: ""
+          
+          # People Plugin - Maximum Display
+          plugin_people: yes
+          plugin_people_types: followers, following
+          plugin_people_limit: 200
+          plugin_people_size: 32
+          plugin_people_identicons: yes
+          plugin_people_shuffle: no
+          plugin_people_thanks: yes
+          
+          # Sponsors Plugin
+          plugin_sponsors: yes
+          plugin_sponsors_sections: goal, list, about
+          
+          # Configuration
+          config_timezone: Asia/Kolkata
+          config_padding: 6%, 10%
+
+  # ============================================
+  # 🔥 ACTIVITY METRICS - Recent Activity & Code
   # ============================================
   github-metrics-activity:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Activity Metrics
+      - name: Activity & Code
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: Shubham-cyber-prog
+          
           base: ""
           
-          # Activity plugin
+          # Activity Plugin
           plugin_activity: yes
+          plugin_activity_limit: 10
           plugin_activity_days: 30
           plugin_activity_filter: all
-          plugin_activity_limit: 10
           plugin_activity_load: 500
           plugin_activity_visibility: all
           
-          # Code snippet plugin
+          # Code Plugin - Recent snippets
           plugin_code: yes
           plugin_code_lines: 20
           plugin_code_load: 500
+          plugin_code_days: 7
           plugin_code_visibility: public
-          
-          # Discussions plugin
-          plugin_discussions: yes
-          plugin_discussions_categories: yes
           
           # Configuration
           config_timezone: Asia/Kolkata
 
   # ============================================
-  # Contribution Metrics
+  # 🌟 REPOSITORY METRICS - Stars, Traffic, Projects
   # ============================================
-  github-metrics-contributions:
+  github-metrics-repositories:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Contribution Metrics
+      - name: Repository Stats
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.contributions.svg
+          filename: metrics.repositories.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: Shubham-cyber-prog
+          
+          base: repositories
+          
+          # Stargazers Plugin
+          plugin_stargazers: yes
+          plugin_stargazers_charts: yes
+          plugin_stargazers_charts_type: chartist
+          plugin_stargazers_days: 30
+          
+          # Traffic Plugin
+          plugin_traffic: yes
+          
+          # Projects Plugin
+          plugin_projects: yes
+          plugin_projects_limit: 10
+          plugin_projects_descriptions: yes
+          
+          # Configuration
+          config_timezone: Asia/Kolkata
+          repositories_forks: yes
+
+  # ============================================
+  # 🎨 CREATIVE METRICS - Skyline, Fortune, Reactions
+  # ============================================
+  github-metrics-creative:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Creative Visualizations
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.creative.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Shubham-cyber-prog
+          
           base: ""
           
-          # Notable contributions
+          # Skyline 3D Plugin
+          plugin_skyline: yes
+          plugin_skyline_year: 2024
+          plugin_skyline_frames: 60
+          plugin_skyline_quality: 0.5
+          plugin_skyline_compatibility: yes
+          
+          # Fortune Plugin
+          plugin_fortune: yes
+          
+          # Music Plugin (if you use Last.fm or Spotify)
+          # plugin_music: yes
+          # plugin_music_provider: spotify
+          # plugin_music_token: ${{ secrets.SPOTIFY_TOKEN }}
+          # plugin_music_limit: 10
+          # plugin_music_mode: recent
+          
+          # Configuration
+          config_timezone: Asia/Kolkata
+
+  # ============================================
+  # 🏆 ACHIEVEMENTS & MILESTONES
+  # ============================================
+  github-metrics-achievements:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Achievements & Milestones
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Shubham-cyber-prog
+          
+          base: ""
+          
+          # Achievements Plugin - Full Display
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: B
+          plugin_achievements_limit: 20
+          
+          # Notable Contributions
           plugin_notable: yes
           plugin_notable_from: organization
           plugin_notable_repositories: yes
           plugin_notable_indepth: yes
           plugin_notable_types: commit, pull_request, issue
           
-          # Stackoverflow plugin
-          plugin_stackoverflow: yes
-          plugin_stackoverflow_user: 0  # Replace with your Stack Overflow user ID
-          plugin_stackoverflow_sections: answers-top, questions-recent
-          plugin_stackoverflow_limit: 5
+          # Configuration
+          config_timezone: Asia/Kolkata
+
+  # ============================================
+  # 📈 ANALYTICS METRICS - PageSpeed, WakaTime
+  # ============================================
+  github-metrics-analytics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Analytics & Performance
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.analytics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Shubham-cyber-prog
           
-          # WakaTime plugin (if you use it)
+          base: ""
+          
+          # PageSpeed Plugin (Optional - requires PAGESPEED_TOKEN)
+          plugin_pagespeed: yes
+          plugin_pagespeed_detailed: yes
+          plugin_pagespeed_screenshot: yes
+          plugin_pagespeed_pwa: yes
+          plugin_pagespeed_url: .user.website
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          
+        
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
           plugin_wakatime_days: 30
@@ -269,36 +383,40 @@ jobs:
           config_timezone: Asia/Kolkata
 
   # ============================================
-  # Repository Metrics
+  # 💬 SOCIAL METRICS - Tweets, RSS Feed
   # ============================================
-  github-metrics-repositories:
+  github-metrics-social:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Repository Metrics
+      - name: Social & Content
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.repositories.svg
+          filename: metrics.social.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: Shubham-cyber-prog
-          base: repositories
           
-          # Repositories traffic
-          plugin_traffic: yes
+          base: ""
           
-          # Stargazers plugin
-          plugin_stargazers: yes
-          plugin_stargazers_charts: yes
-          plugin_stargazers_charts_type: classic
-          plugin_stargazers_days: 30
+          # Posts from Dev.to
+          plugin_posts: yes
+          plugin_posts_source: dev.to
+          plugin_posts_limit: 6
+          plugin_posts_descriptions: yes
+          plugin_posts_covers: yes
+          plugin_posts_user: Shubham-cyber-prog
           
-          # Projects plugin
-          plugin_projects: yes
-          plugin_projects_limit: 10
-          plugin_projects_descriptions: yes
+          # RSS Feed Plugin (if you have a blog)
+          # plugin_rss: yes
+          # plugin_rss_source: https://yourblog.com/feed
+          # plugin_rss_limit: 5
+          
+          # Tweets Plugin (Optional - requires TWITTER_TOKEN)
+          # plugin_tweets: yes
+          # plugin_tweets_token: ${{ secrets.TWITTER_TOKEN }}
+          # plugin_tweets_user: your_twitter_handle
+          # plugin_tweets_limit: 5
           
           # Configuration
           config_timezone: Asia/Kolkata
-          repositories_forks: yes
