@@ -1,11 +1,13 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=280&section=header&text=Subham%20Nayak&fontSize=70&fontAlignY=35&desc=FullStack%20Developer%20%7C%20CS%20Student&descAlignY=62&descSize=20&animation=twinkling&fontColor=ffffff&stroke=00CED1&strokeWidth=2)
+![header](https://capsule-render.vercel.app/api?type=venom&color=0:00FFFF,50:00CED1,100:0080FF&height=300&text=Subham%20Nayak&fontSize=80&fontColor=ffffff&desc=Full%20Stack%20Developer%20from%20India%20🇮🇳&descAlignY=70&descSize=20&animation=scaleIn)
 
 <!-- Centered Typing Text -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=F7C52B&center=true&vCenter=true&width=435&lines=Welcome+to+my+GitHub+Profile!" alt="Typing SVG" />
 </p>
 
-<img align="right" alt="coding" width="400" src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif">
+
+<img align="right" alt="Coding" width="400" src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif">
+
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=shubham-cyber-prog&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
@@ -17,13 +19,18 @@
 </a>
 </p>
 
-- 🔭 I’m currently working on [Portfolio](https://tripolio.netlify.app/)
-- 🌱 I’m currently learning **Node.js**, **Docker**, and **DevOps**
-- 👨‍💻 All of my projects are available at [GitHub](https://github.com/Shubham-cyber-prog)
-- 📫 Reach me at: **sn343555@gmail.com**
-- 📄 Check out my [Resume](https://drive.google.com/file/d/18LQPmXDf634owLnqbpXtWU4CICSZixSO/view?usp=drivesdk)
 
 
+<div align="center">
+
+</div>
+
+- 🔭 Currently working on **[Portfolio](https://tripolio.netlify.app/)** - A modern web portfolio
+- 🌱 Learning **GSAP**, **Docker**, and **DevOps** to expand my skillset
+- 👨‍💻 All my projects are available on **[GitHub](https://github.com/Shubham-cyber-prog)**
+- 📫 Reach me at: **[sn343555@gmail.com](mailto:sn343555@gmail.com)**
+- 📄 Check out my **[Resume](https://drive.google.com/file/d/18LQPmXDf634owLnqbpXtWU4CICSZixSO/view?usp=drivesdk)**
+- ⚡ Fun fact: **Always excited to learn new technologies!**
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
 
@@ -61,50 +68,79 @@
 </p> -->
 
 
- <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="30"> Tech Stack & Tools
-
 <div align="center">
 
-### 🔥 Core Languages
-<p align="center">
-  <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="65" height="65" />
+## 🛠️ 𝗧𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸 & 𝗧𝗼𝗼𝗹𝘀
+
+
+### 💻 Core Languages
+
+<p>
+  <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="80" height="80" />
+  <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="80" height="80" />
+  <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="80" height="80" />
+  <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="80" height="80" />
 </p>
 
 ### 🎨 Frontend Development
-<p align="center">
-  <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" />
-  <img src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,gsap" width="300"/>
+
+<p>
+  <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="80" height="80" />
+  <img src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,gsap,nextjs" />
 </p>
 
-### ⚡ Backend & Database
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql,postgresql,redis" width="350"/>
+### ⚙️ Backend & Database
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql,postgresql,redis,graphql" />
 </p>
 
 ### ☁️ DevOps & Cloud
-<p align="center">
-  <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
-  <img src="https://skillicons.dev/icons?i=firebase,vercel,linux" width="200"/>
+
+<p>
+  <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="80" height="80" />
+  <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="80" height="80" />
+  <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="80" height="80" />
+  <img src="https://skillicons.dev/icons?i=firebase,vercel,linux" />
 </p>
 
-### 🧠 AI/ML & Tools
-<p align="center">
-  <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,jupyter,discord" width="200"/>
+### 🧰 Tools & Technologies
+
+<p>
+  <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="80" height="80" />
+  <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="REST API" width="80" height="80" />
+  <img src="https://skillicons.dev/icons?i=git,vscode,postman,figma,jupyter,discord" />
 </p>
 
 </div>
 
 
-<h2 align="center">📊 GitHub Summary</h2>
 
-<p align="center">
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubham-cyber-prog&theme=2077" alt="Profile Details" />
-   <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=2077" alt="GitHub Stats" />
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shubham-cyber-prog&theme=2077" alt="Most Commit Language" />
-</p>
+
+<div align="center">
+
+## 📊 𝗚𝗶𝘁𝗛𝘂𝗯 𝗦𝘁𝗮𝘁𝗶𝘀𝘁𝗶𝗰𝘀
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFFF,100:0080FF&height=2&section=header&width=800"/>
+
+<br>
+
+<!-- Profile Details Card -->
+<img width="90%" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubham-cyber-prog&theme=2077" alt="Profile Details" />
+
+<br>
+
+<!-- Stats Cards Row -->
+<img width="45%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=2077" alt="GitHub Stats" />
+<img width="45%" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shubham-cyber-prog&theme=2077" alt="Most Commit Language" />
+
+<br>
+
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0080FF,100:00FFFF&height=2&section=footer&width=800"/>
+
+</div>
+
 
   
 <!-- <h2 align="center">⚡ More About Me ⚡</h2>
@@ -153,7 +189,7 @@ For future use
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shubham-cyber-prog&theme=react-dark&hide_border=true&area=true" />
-
+  
   ![3D Profile](profile-3d-contrib/profile-night-rainbow.svg)
 </p>
 
@@ -183,6 +219,7 @@ For future use
 ```
 
 </h4>  
+
 
 <!-- Snake Game Repo View -->
 <div align="center">
@@ -285,8 +322,8 @@ Ruby                     1 repo              █░░░░░░░░░░�
 <!--Wakatime stats-->
 
  <p align="center">
-  <img align="center" width="400px" height="400px" src="https://wakatime.com/share/@SubhamN2006/bf42f426-175f-4cb7-b8d0-0a173bbd2c5f.svg"/>
-  <img align="center" width="400px" height="400px" src="https://wakatime.com/share/@SubhamN2006/531b99d2-b9f7-4a31-b451-d0b9f49b1311.svg"/>
+  <img align="center" width="500px" height="400px" src="https://wakatime.com/share/@SubhamN2006/bf42f426-175f-4cb7-b8d0-0a173bbd2c5f.svg"/>
+  <img align="center" width="500px" height="400px" src="https://wakatime.com/share/@SubhamN2006/531b99d2-b9f7-4a31-b451-d0b9f49b1311.svg"/>
 </p> 
 
 <p align="center">
