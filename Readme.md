@@ -319,9 +319,4 @@ Ruby                     1 repo              █░░░░░░░░░░�
 <!-- Cyan Wave Footer - shorter height -->
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:00CED1&height=130&section=footer&animation=fadeIn)
 ![header](https://user-images.githubusercontent.com/73928744/182041587-527d010a-80d3-4b57-bd99-c2be13c1a516.png)
-<div align="center">
-  <a href="#">
-  <img alt="Thanks for visiting!" 
-       src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=28&duration=2500&color=00FFAA&center=true&vCenter=true&width=400&lines=Thanks+for+visiting!;Have+a+great+day,+Coder!">
-    </a>
-</div>
+
