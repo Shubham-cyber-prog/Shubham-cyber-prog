@@ -108,7 +108,7 @@
 </p>
 
   
-<h2 align="center">⚡ More About Me ⚡</h2>
+<!-- <h2 align="center">⚡ More About Me ⚡</h2>
 <div align="center" style="font-size: 16px; line-height: 1.8;">
 
 🔭 <b>Currently working on:</b> Full Stack Projects and Hackathons  
@@ -119,7 +119,7 @@
 
 </div>
 <br>
-<div align="center"><a href="#"><img alt="" width="100%" src="datascience.gif"></a></div>
+<div align="center"><a href="#"><img alt="" width="100%" src="datascience.gif"></a></div> -->
 <hr/>
 
 [![Holopin Badge](https://holopin.me/shubhamcyberprog)](https://holopin.io/@shubhamcyberprog)
