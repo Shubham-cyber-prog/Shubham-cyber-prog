@@ -287,11 +287,11 @@ Ruby                     1 repo              █░░░░░░░░░░�
 
 
 <p align="center">
-  <img width="400px" style="margin-right:10px;"
-  src="https://wakatime.com/share/@SubhamN2006/bf42f426-175f-4cb7-b8d0-0a173bbd2c5f.svg" />
+  <img align="center" width="400px" height="400px"
+  src="https://wakatime.com/share/@SubhamN2006/bf42f426-175f-4cb7-b8d0-0a173bbd2c5f.svg"/>
 
-  <img width="400px"
-  src="https://wakatime.com/share/@SubhamN2006/0452b95a-3cec-47d8-b365-f418ebef14eb.svg" />
+  <img align="center" width="400px" height="400px"
+  src="https://wakatime.com/share/@SubhamN2006/0452b95a-3cec-47d8-b365-f418ebef14eb.svg"/>
 </p>
 
 
