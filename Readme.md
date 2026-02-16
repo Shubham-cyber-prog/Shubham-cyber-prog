@@ -26,7 +26,7 @@
 
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
-
+<img src="https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=radical&no-frame=true&column=7" alt="GitHub Trophies"/>
 
 
 <p align="center">
