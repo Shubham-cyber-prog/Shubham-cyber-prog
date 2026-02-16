@@ -49,6 +49,12 @@ jobs:
           plugin_achievements_limit: 8
           plugin_notable: yes
           plugin_notable_types: commit
+          plugin_posts: yes
+          plugin_posts_source: medium
+          plugin_posts_limit: 3
+          plugin_posts_descriptions: yes
+          plugin_posts_covers: yes
+          plugin_posts_user: sn343555
 
   github-metrics-detailed:
     runs-on: ubuntu-latest
