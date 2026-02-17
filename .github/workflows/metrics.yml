@@ -67,11 +67,11 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_colors: github
           plugin_posts: yes
-          plugin_posts_source: medium
+          plugin_posts_source: dev.to
           plugin_posts_limit: 3
           plugin_posts_descriptions: yes
           plugin_posts_covers: yes
-          plugin_posts_user: sn343555
+          plugin_posts_user: shubham_nayak_
           plugin_followup: yes
           plugin_followup_sections: repositories
           plugin_leetcode: yes
