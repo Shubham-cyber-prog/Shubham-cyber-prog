@@ -43,7 +43,7 @@
                                     <rect class="day" x="150" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="165" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                 </g>
                             </svg>
                         </div>
@@ -74,14 +74,14 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#issues-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="19.109131403118038" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="19.109131403118038" y="0" width="0" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="19.109131403118038" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="19.109131403118038" y="0" width="0" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="19.109131403118038" y="0" width="200.89086859688194" height="8" fill="#8957e5"/>
-                            <rect mask="url(#issues-bar)" x="219.99999999999997" y="0" width="0" height="8" fill="#d2a8ff"/>
-                            <rect mask="url(#issues-bar)" x="219.99999999999997" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="219.99999999999997" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="19.406968124536693" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="19.406968124536693" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="19.406968124536693" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="19.406968124536693" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="19.406968124536693" y="0" width="200.5930318754633" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#d2a8ff"/>
+                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#c9d1d9"/>
                         </svg>
                         <div class="followup legend field fill-width">
                             <div class="field">
@@ -89,7 +89,7 @@
                                     <path fill="#238636" d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                     <path fill="#238636" fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                                 </svg>
-                                <span class="no-wrap">117 <small>open</small></span>
+                                <span class="no-wrap">119 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -450,8 +450,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge all">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="4.841982958946553 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">57</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="4.926930028401756 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">58</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/3873</text>
                                 </svg>
                                 <span class="title">All</span>
@@ -459,8 +459,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge easy">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="13.06115879828326 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">37</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="13.414163090128755 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">38</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/932</text>
                                 </svg>
                                 <span class="title">Easy</span>
@@ -501,9 +501,9 @@
                         <div class="label fundamental"><span class="dot">⬤</span> Stack <span class="count">x5</span></div>
                         <div class="label intermediate"><span class="dot">⬤</span> Hash Table <span class="count">x4</span></div>
                         <div class="label advanced"><span class="dot">⬤</span> Dynamic Programming <span class="count">x3</span></div>
+                        <div class="label intermediate"><span class="dot">⬤</span> Tree <span class="count">x3</span></div>
+                        <div class="label intermediate"><span class="dot">⬤</span> Depth-First Search <span class="count">x3</span></div>
                         <div class="label fundamental"><span class="dot">⬤</span> Sorting <span class="count">x3</span></div>
-                        <div class="label advanced"><span class="dot">⬤</span> Divide and Conquer <span class="count">x2</span></div>
-                        <div class="label intermediate"><span class="dot">⬤</span> Tree <span class="count">x2</span></div>
                     </div>
                 </section>
                 <section class="leetcode subsection">
@@ -518,8 +518,8 @@
                             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                         </svg>
                         <div class="infos">
-                            <div class="title">Binary Tree Inorder Traversal</div>
-                            <div class="date">10 Mar 2026</div>
+                            <div class="title">Maximum Depth of Binary Tree</div>
+                            <div class="date">17 Mar 2026</div>
                         </div>
                     </div>
                     <div class="field">
@@ -527,15 +527,15 @@
                             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                         </svg>
                         <div class="infos">
-                            <div class="title">Sudoku Solver</div>
-                            <div class="date">5 Mar 2026</div>
+                            <div class="title">Binary Tree Inorder Traversal</div>
+                            <div class="date">10 Mar 2026</div>
                         </div>
                     </div>
                 </section>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 17 Mar 2026, 13:03:46 (timezone Asia/Kolkata) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 18 Mar 2026, 01:02:19 (timezone Asia/Kolkata) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
