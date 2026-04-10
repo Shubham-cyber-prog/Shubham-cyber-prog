@@ -21,7 +21,7 @@
 
 
 
-<div align="center">https://drive.google.com/file/d/10z6IuzA_HlwAT1u0s8h18Jpwe80EemhV/view?usp=sharing
+<div align="center">
 
 </div>
 
