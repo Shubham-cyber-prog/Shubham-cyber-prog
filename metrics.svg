@@ -82,7 +82,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            1581 Commits
+                            1582 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -128,7 +128,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"/>
                             </svg>
-                            Following 7 users
+                            Following 6 users
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -2307,7 +2307,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>open-metadata/OpenMetadata</span>
-                                        <span>starred 3 days ago</span>
+                                        <span>starred 4 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team collaboration.</div>
@@ -2328,7 +2328,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                         </svg>
-                                        10.7k
+                                        10.8k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -2341,7 +2341,7 @@
                                             <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                             <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                                         </svg>
-                                        9.48k
+                                        9.49k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -2670,11 +2670,10 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"/>
                     </svg>
-                    7 followed
+                    6 followed
                 </h2>
                 <div class="row">
                     <section class="people">
-                        <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUH/8QAKxAAAQMCBQIGAgMAAAAAAAAAAQIDBAURABITITEGIgdBUWFicRSBkbHB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDAP/EABkRAAMBAQEAAAAAAAAAAAAAAAABERICIf/aAAwDAQACEQMRAD8AweVElU/pkxKk1qU9axJizGO4IWe0g/Ej/OeMWvD9b9fU3ElwWRSadDebK46UtXdWkhtxzY51Anm17YR9AMhMC9LT+ZT3wSuFJ7VIPwJ2I/kYv9OtRqUiSzEgtRG3Duyl4ODU+wT6Daw+sVxSW4GnKe1CdZqtZlRnJUVjR1m2g2XPLO5udRwgkXP94IVihmoVF6dVKhGpa5J1Go8ggr0uEk24449saSinwlPJlpo6pUxpfap2QFJbPqWwohJH1fBWuOUBmoLPUinZVRcAWot7JQngIAvwLYzQuvRh0zVqcyzEosoIIeGyiR2++JleahMVN9vKtBRdolxoi4BIJ25Bt7frGSUya+eoGVld1Zsm/pjVoiUzYVPekZlOKdFjnV22va2+2HToGoXWpdGhUFuXKjEoaOm0AnIXQQDc8XRc+eDFVS1LmF5IYaCgO3txE8Q5j0dl6O2s6YCUC5JNv3gvBnyHIyStQUeLkYD6jgVzVT//2Q==" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgUHBP/EACkQAAEDAwIEBwEBAAAAAAAAAAECAwQABRESIQYTMVEVIiNBQmFxwfD/xAAXAQEBAQEAAAAAAAAAAAAAAAAFAwAE/8QAHxEAAgICAgMBAAAAAAAAAAAAAQIAAwQRBSEUIjFB/9oADAMBAAIRAxEAPwBjcrgi322TNfHpsNLdIHuAM0b4V418SjMSH43LLgwoZJA/B/auXKOmdbJcNaQUPNLbIPTcYoFBhC3lDT7yG2AnGkk60KA9xnbftXO1hT5H8mstofk0Ph+7PXBuSl9hxlxl3R5hjWnGQf8AdqpqUc9TR7hZLTVvAZmrln5OkY/AKtZ+6ojbEyD0G5yNkqBIxgdSTis6usWe1fJL096Ett5WtlIGeWnHQnbemcpxSXWmwfJpK8fe1Ep45909Tf1KTr45bagxPZgOZzNiZLUgdLHfA1tadtQDzxju5KyrT5D22qz4XI+LjSh31UXbeXEgKDB0hDe1LOGyZNpadeUVLVuTV/ArUdQ0c3kq5A1qf//Z" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAABQcEBgIDCP/EAC0QAAEDAwMCBAUFAAAAAAAAAAECAwQABREGEjETIQcjQZEyQlGBoUNiceHw/8QAGAEAAwEBAAAAAAAAAAAAAAAAAgMFAAH/xAAcEQACAgMBAQAAAAAAAAAAAAACAwABEiExERP/2gAMAwEAAhEDEQA/AJms7o5Y9OzZ7KAtxpI2g8ZJAGfeldatEXfVTaLjOuY6rvcJeyvA/wB6UxPEodXSslkjKHVNoUccDeDn8UMtCU26REmC5OBqQrYloZCQMHIwPtUkmWFa7KSVUzvJEt9su2l5TEGdIblQpIUhstk+WQM8HisVDvVkn2h0x47kicuS4y8qQkqJJ27Fjkn949qrquaYDMqiXpwLUteq7xBs1nfkXJSemfLDZ/UJ9BS/tVwTa5xhXZx6MtgnpuNhZDiSeexFLC5XGXdHxIuMhyQ858zhzt/j6V034XQId98IRPukRl+ZEYcDLxThadmdvcd/lFGaKxnFOsC1Azb7j8brbXW2lJPS6nxqRnk+34oErmtHivcpDR0pNhKENx215UljIQfMVyDnP3zQe03mTJhIcdDRUfon+63xoRqCTLM79n//2Q==" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABQYDBAcC/8QAKxAAAQMDAQUIAwAAAAAAAAAAAQIDBAAFERMGEiExUQcUIkFSYXGBkbHh/8QAFwEBAQEBAAAAAAAAAAAAAAAABAMCBf/EABoRAQADAQEBAAAAAAAAAAAAAAEAAhEDBBP/2gAMAwEAAhEDEQA/AFu0W9MobyzuNNJLrrnobAyaqbPba7ROwp6LcpiPAebcTouAEqbUCMHz5Hn1prs7cRmxupnK0kSmlBzI4bvT+Uhw4jDW+x3MONLAbUrUOeHo/FBuubO556ioxg2VuSrva3X32g2+26UKA+qndKQs8U/dSx+6woJTHV4Hlb5HPBIHDPwKJ2jZ243GJ3iNFUtoqIBA4UnnVzchulyrizMb9tTPu0FiNqiO0yrKdEYJ+fah0N+TGiTNR95yQcaKkuYR776POg2opBGDy4/qrTb7mnz61f5VTIctarownarjKhEmRJW82oeJKjkA9a0a29s70a3Ro67YyvSbCAppRQCB7Z51jbrilNK3jnjXDKiGwBW2QtP/2Q==" width="28" height="28" alt="" />
