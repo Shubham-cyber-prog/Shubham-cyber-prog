@@ -1,7 +1,0 @@
-titleOnly: true
-scopes:
-  - feat
-  - fix
-  - docs
-  - chore
-  - refactor
