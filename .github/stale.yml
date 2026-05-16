@@ -1,8 +1,0 @@
-# Auto close stale issues after 14 days
-daysUntilStale: 14
-daysUntilClose: 7
-staleLabel: "stale"
-exemptLabels:
-  - "important"
-markComment: >
-  This issue has been marked stale due to inactivity.
