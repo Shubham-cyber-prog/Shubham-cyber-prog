@@ -1,4 +1,0 @@
-# For Welcome Bot
-welcome:
-  newIssueWelcomeComment: "👋 Thanks for opening your first issue!"
-  newPRWelcomeComment: "🎉 Thank you for your first PR!"
