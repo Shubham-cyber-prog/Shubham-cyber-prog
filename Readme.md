@@ -128,18 +128,22 @@
 <!-- Profile Details Card -->
 <img width="90%" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubham-cyber-prog&theme=2077" alt="Profile Details" />
 
+
+
 <br>
 
 <!-- Stats Cards Row -->
-<img width="45%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=2077" alt="GitHub Stats" />
-<img width="45%" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shubham-cyber-prog&theme=2077" alt="Most Commit Language" />
-
+<img width="49%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-cyber-prog&theme=github_dark" alt="GitHub Stats" />
+<img width="49%" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shubham-cyber-prog&theme=github_dark" alt="Most Commit Language" />
 <br>
 
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0080FF,100:00FFFF&height=2&section=footer&width=800"/>
 
 </div>
+
+
+
 
 
   
