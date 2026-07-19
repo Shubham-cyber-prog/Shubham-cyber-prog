@@ -19,6 +19,7 @@ jobs:
       - name: Personal metrics
         uses: lowlighter/metrics@v3.34
         with:
+          debug: yes
           filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
@@ -76,6 +77,7 @@ jobs:
       - name: Detailed metrics
         uses: lowlighter/metrics@v3.34
         with:
+          debug: yes
           filename: metrics.detailed.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
