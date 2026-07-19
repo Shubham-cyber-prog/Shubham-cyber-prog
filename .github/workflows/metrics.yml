@@ -1,3 +1,4 @@
+
 name: GitHub metrics
 
 on:
@@ -13,13 +14,12 @@ permissions:
   contents: write
 
 jobs:
-  github-metrics-personal:
+  github-metrics-core:
     runs-on: ubuntu-latest
     steps:
-      - name: Personal metrics
+      - name: Core metrics
         uses: lowlighter/metrics@v3.34
         with:
-          debug: yes
           filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
@@ -31,6 +31,32 @@ jobs:
           plugin_introduction_title: yes
 
           plugin_lines: yes
+
+          plugin_stars: yes
+          plugin_stars_limit: 3
+          plugin_stargazers: yes
+
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+
+          repositories_forks: yes
+
+          plugin_achievements: no
+
+  github-metrics-social:
+    needs: github-metrics-core
+    runs-on: ubuntu-latest
+    steps:
+      - name: Social metrics
+        uses: lowlighter/metrics@v3.34
+        with:
+          filename: metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: Shubham-cyber-prog
+          base: ""
+          config_timezone: Asia/Kolkata
 
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
@@ -44,40 +70,39 @@ jobs:
           plugin_habits_facts: yes
           plugin_habits_charts: yes
 
-          plugin_stars: yes
-          plugin_stars_limit: 3
-          plugin_stargazers: yes
-
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
+  github-metrics-community:
+    needs: github-metrics-social
+    runs-on: ubuntu-latest
+    steps:
+      - name: Community metrics
+        uses: lowlighter/metrics@v3.34
+        with:
+          filename: metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: Shubham-cyber-prog
+          base: ""
+          config_timezone: Asia/Kolkata
 
           plugin_people: yes
           plugin_people_types: followers, following
           plugin_people_limit: 100
           plugin_people_size: 28
 
-          repositories_forks: yes
-
           plugin_reactions: yes
           plugin_reactions_limit: 100
           plugin_reactions_days: 14
-
-          plugin_achievements: yes
-          plugin_achievements_threshold: C
-          plugin_achievements_display: compact
-          plugin_achievements_limit: 8
 
           plugin_notable: yes
           plugin_notable_types: commit
 
   github-metrics-detailed:
+    needs: github-metrics-community
     runs-on: ubuntu-latest
     steps:
       - name: Detailed metrics
         uses: lowlighter/metrics@v3.34
         with:
-          debug: yes
           filename: metrics.detailed.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
