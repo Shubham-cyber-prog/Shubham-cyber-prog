@@ -335,11 +335,15 @@ Ruby                     1 repo              █░░░░░░░░░░�
   <h4 align="center"><code>📊 𝙶𝚒𝚝𝙷𝚞𝚋 𝙼𝚎𝚝𝚛𝚒𝚌𝚜</code></h4>
 </p>
 
-  <p align="center">
-  <img width="75%" src="metrics.svg"/>
-  <img src="metrics.detailed.svg" width="75%"/>
-</p>
 
+<p align="center">
+  <img src="./metrics.svg" width="49%" />
+  <img src="./metrics.social.svg" width="49%" />
+</p>
+<p align="center">
+  <img src="./metrics.community.svg" width="49%" />
+  <img src="./metrics.detailed.svg" width="49%" />
+</p>
 <div align="center">
 
 ## 🌐 𝓒𝓸𝓷𝓷𝓮𝓬𝓽 𝓦𝓲𝓽𝓱 𝓜𝓮
