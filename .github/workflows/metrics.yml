@@ -1,5 +1,3 @@
-
-          
 name: GitHub metrics
 
 on:
@@ -19,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Personal metrics
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@v3.34
         with:
           filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -76,7 +74,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Detailed metrics
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@v3.34
         with:
           filename: metrics.detailed.svg
           token: ${{ secrets.METRICS_TOKEN }}
