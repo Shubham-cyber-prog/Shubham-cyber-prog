@@ -1,8 +1,18 @@
+
+          
 name: GitHub metrics
+
 on:
   schedule:
     - cron: "21 6,18 * * *"
   workflow_dispatch:
+
+concurrency:
+  group: metrics
+  cancel-in-progress: true
+
+permissions:
+  contents: write
 
 jobs:
   github-metrics-personal:
@@ -16,37 +26,49 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: Shubham-cyber-prog
           base: "header, activity, community, repositories"
+          config_timezone: Asia/Kolkata
+
           plugin_introduction: yes
           plugin_introduction_title: yes
+
           plugin_lines: yes
+
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+
           plugin_topics: yes
           plugin_topics_mode: icons
           plugin_topics_limit: 12
+
           plugin_habits: yes
           plugin_habits_from: 200
           plugin_habits_facts: yes
           plugin_habits_charts: yes
-          config_timezone: Asia/Kolkata
+
           plugin_stars: yes
           plugin_stars_limit: 3
           plugin_stargazers: yes
+
           plugin_activity: yes
           plugin_activity_limit: 5
           plugin_activity_days: 14
+
           plugin_people: yes
           plugin_people_types: followers, following
           plugin_people_limit: 100
           plugin_people_size: 28
+
           repositories_forks: yes
+
           plugin_reactions: yes
           plugin_reactions_limit: 100
           plugin_reactions_days: 14
+
           plugin_achievements: yes
           plugin_achievements_threshold: C
           plugin_achievements_display: compact
           plugin_achievements_limit: 8
+
           plugin_notable: yes
           plugin_notable_types: commit
 
@@ -61,23 +83,27 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: Shubham-cyber-prog
           base: "header, metadata"
+          config_timezone: Asia/Kolkata
+
           plugin_languages: yes
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_colors: github
+
           plugin_posts: yes
           plugin_posts_source: dev.to
           plugin_posts_limit: 3
           plugin_posts_descriptions: yes
           plugin_posts_covers: yes
           plugin_posts_user: shubham_nayak_
+
           plugin_followup: yes
           plugin_followup_sections: repositories
+
           plugin_leetcode: yes
           plugin_leetcode_user: SubhamN2006
           plugin_leetcode_sections: solved, skills, recent
-          config_timezone: Asia/Kolkata
+
           plugin_calendar: yes
           plugin_calendar_limit: 1
-          
