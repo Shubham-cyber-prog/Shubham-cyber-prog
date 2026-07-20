@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Personal metrics
-        uses: JayantGoel001/metrics@master
+        uses: lowlighter/metrics@latest 
         with:
           filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
