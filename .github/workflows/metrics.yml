@@ -26,8 +26,7 @@ jobs:
           plugin_introduction: yes
           plugin_introduction_title: yes
 
-          plugin_lines: yes
-          plugin_lines_sections: history,repositories
+          plugin_lines: no
 
           plugin_music: no
 
