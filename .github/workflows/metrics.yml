@@ -19,7 +19,7 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: Shubham-cyber-prog
 
-          base: "header, activity, community, repositories"
+          base: "header, activity, repositories"
           config_display: large
           config_timezone: Asia/Kolkata
 
