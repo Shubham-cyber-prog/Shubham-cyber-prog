@@ -95,14 +95,6 @@
   <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql,postgresql,redis,graphql" />
 </p>
 
-### ☁️ DevOps & Cloud
-
-<p>
-  <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="80" height="80" />
-  <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="80" height="80" />
-  <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="80" height="80" />
-  <img src="https://skillicons.dev/icons?i=firebase,vercel,linux" />
-</p>
 
 ### 🧰 Tools & Technologies
 
