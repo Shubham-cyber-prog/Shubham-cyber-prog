@@ -29,7 +29,7 @@
 - 🌱 Learning **GSAP**, **Docker**, and **DevOps** to expand my skillset
 - 👨‍💻 All my projects are available on **[GitHub](https://github.com/Shubham-cyber-prog)**
 - 📫 Reach me at: **[sn343555@gmail.com](mailto:sn343555@gmail.com)**
-- 📄 Check out my **[Resume](https://drive.google.com/file/d/10z6IuzA_HlwAT1u0s8h18Jpwe80EemhV/view?usp=sharing)**
+- 📄 Check out my **[Resume](https://drive.google.com/file/d/1p7YBwnxElPQ64ZNsFibooyO2Wybw4-Dz/view?usp=drive_link)**
 - ⚡ Fun fact: **Always excited to learn new technologies!**
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
