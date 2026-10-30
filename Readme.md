@@ -32,8 +32,7 @@
 - 📄 Check out my **[Resume](https://drive.google.com/file/d/1p7YBwnxElPQ64ZNsFibooyO2Wybw4-Dz/view?usp=drive_link)**
 - ⚡ Fun fact: **Always excited to learn new technologies!**
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=Shubham-cyber-prog&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
-
+![GitHub Trophy](https://github-profile-trophy-unserori.vercel.app/?username=Shubham-cyber-prog&column=10&margin-w=15&margin-h=15&no-bg=true&no-frame=true&theme=juicyfresh)
 
 <p align="center">
   <img height="170" width="160" src="left.webp" />
